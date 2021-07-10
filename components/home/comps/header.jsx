@@ -5,7 +5,8 @@ import style from '../home.module.css'
 export default function Header() {
 	return (
 		<div className={style.header}>
-			Mathew Kramsch
+			<h1>Mathew Kramsch</h1>
+			<p>Full-Stack Web Developer</p>
 		</div>
 	);
 }

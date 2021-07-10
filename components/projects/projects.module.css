@@ -1,0 +1,38 @@
+/* projects.module.css */
+
+.page {
+}
+
+.pageContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leftContainer {
+} .leftContainer > h1 {
+}
+
+.rightContainer {
+}
+
+/*-----------------------------------------*/
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cardImage {
+} .cardImage > a {
+} .cardImage > a > img {
+    width: 140px;
+}
+
+.cardInfo {
+} .cardInfo > a {
+} .cardInfo > a > h3 {  /* project title link */
+} .cardInfo > p {
+} .cardInfo > a > p {  /* project source code link */
+}

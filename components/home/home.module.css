@@ -1,5 +1,52 @@
-.about {
+/* home.module.css */
+
+.page {
+    display: flex;
+    flex-direction: column;
 }
 
+.pageContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leftContainer {
+}
+
+.rightContainer {
+    display: flex;
+    align-items: center;
+}
+
+.bottomMiddleContainer {
+    margin: auto;
+}
+
+/*-----------------------------------------*/
+
 .header {
+} .header > h1 {
+} .header > p {
+}
+
+.links {
+} .links > a {
+} .icon {
+    width: 1rem;
+    color: grey;
+} #gitHub {
+} #linkedIn {
+} #resume {
+}
+
+.rightContainer > p {
+}
+
+.scrollDown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} .scrollDown > button {
+} #down {
 }

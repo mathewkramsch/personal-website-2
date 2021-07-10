@@ -9,7 +9,7 @@ import { projectsList } from '../assets/projectsList'  // this is the projects d
 
 export default function Index() {
 	return (
-		<div>
+		<div className={style.sitePages}>
 			<Home/>
 			<Projects data={projectsList}/>
 			<Contact/>

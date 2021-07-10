@@ -6,12 +6,14 @@ import ProjectCards from './comps/projectCards'
 
 export default function Projects(props) {
 	return (
-		<div>
-            <div className={utilStyle.header}>
-                Projects
-            </div>
-			<div className={style.projectContainer}>
-				<ProjectCards data={props.data}/>
+		<div className={style.page}>
+			<div className={style.pageContent}>
+	            <div className={style.leftContainer}>
+	                <h1>Projects</h1>
+	            </div>
+				<div className={style.rightContainer}>
+					<ProjectCards data={props.data}/>
+				</div>
 			</div>
 		</div>
 	);
