@@ -7,8 +7,8 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 export default function ScrollDown() {
     return (
         <div className={style.scrollDown}>
-            <button>Scroll Down</button>
-            <FontAwesomeIcon icon={faChevronDown} className={style.icon} id='down'/>
+            <p>view projects</p>
+            <FontAwesomeIcon icon={faChevronDown} className={style.icon} id={style.down}/>
         </div>
     );
 }

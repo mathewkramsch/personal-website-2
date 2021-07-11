@@ -3,50 +3,94 @@
 .page {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 .pageContent {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 88vw;
+    margin: auto;
 }
 
 .leftContainer {
 }
 
 .rightContainer {
+
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 38%;
 }
 
 .bottomMiddleContainer {
-    margin: auto;
+    margin-bottom: 100px;
 }
 
 /*-----------------------------------------*/
 
 .header {
 } .header > h1 {
+    font-weight: bold;
+    font-size: 100px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+} #firstName {
+    color: #6DCB4B;
 } .header > p {
+    font-weight: 500;
+    font-size: 50px;
 }
 
 .links {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 } .links > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
 } .icon {
-    width: 1rem;
-    color: grey;
+    width: 66px;
+    color: #cacaca;
+} .links > a > .icon {
+    margin-right: -10px;
 } #gitHub {
-} #linkedIn {
-} #resume {
+} #linkedIn > .icon {
+    width: 60px;
+} #resume > .icon {
+    width: 50px;
 }
 
-.rightContainer > p {
+.rightContainer > p {  /* aboutInfo */
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+} .rightContainer > #intro {
+    margin-bottom: 25px;
 }
 
 .scrollDown {
     display: flex;
     flex-direction: column;
     align-items: center;
-} .scrollDown > button {
+} .scrollDown > p {
+    margin: 0;
+    z-index: 1;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 30px;
 } #down {
+    margin-top: -30px;
 }

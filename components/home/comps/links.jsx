@@ -9,17 +9,17 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 export default function Links() {
 	return (
 		<div className={style.links}>
-            <a href='https://github.com/mathewkramsch' id='gitHub'>
+            <a href='https://github.com/mathewkramsch' id={style.gitHub}>
                 <FontAwesomeIcon icon={faGithub} className={style.icon}/>
-                GitHub
+                github
             </a>
-            <a href='https://www.linkedin.com/in/mathew-kramsch/' id='linkedIn'>
+            <a href='https://www.linkedin.com/in/mathew-kramsch/' id={style.linkedIn}>
                 <FontAwesomeIcon icon={faLinkedin} className={style.icon}/>
-                LinkedIn
+                linkedin
             </a>
-            <a href='/Resume.pdf' id='resume'>
+            <a href='/Resume.pdf' id={style.resume}>
 				<FontAwesomeIcon icon={faFileAlt} className={style.icon}/>
-				Resume
+				resume
 			</a>
 		</div>
 	);

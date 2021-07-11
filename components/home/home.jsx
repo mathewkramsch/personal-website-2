@@ -10,12 +10,14 @@ import { aboutInfo } from '../../assets/aboutInfo'
 export default function Home() {
 	return (
 		<div className={style.page}>
+			<div></div>
 			<div className={style.pageContent}>
 				<div className={style.leftContainer}>
 					<Header/>
 					<Links/>
 				</div>
 				<div className={style.rightContainer}>
+					<p id={style.intro}>Hey what's up!</p>
 					<p>{aboutInfo}</p>
 				</div>
 			</div>
