@@ -12,11 +12,11 @@ export default function Footer() {
             <div className={style.pageContent}>
                 <BackToTop/>
                 <a href='https://github.com/mathewkramsch/personal-website-2'>
-                    <FontAwesomeIcon icon={faGithub} className={style.icon}/>
-                    Source code on Github
+                    <FontAwesomeIcon icon={faGithub} className={style.icon} id={style.github}/>
+                    <p>view source code</p>
                 </a>
                 <p>
-                    Copyright &copy; 2021 Mathew Kramsch. All rights reserved.
+                    copyright &copy; 2021 mathew kramsch. all rights reserved.
                 </p>
             </div>
         </div>

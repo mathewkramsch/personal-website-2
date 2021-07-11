@@ -7,8 +7,8 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 export default function BackToTop() {
     return (
         <div className={style.backToTop}>
-            <button>Back To Top</button>
-            <FontAwesomeIcon icon={faChevronUp} className={style.icon} id='up'/>
+            <p>back to top</p>
+            <FontAwesomeIcon icon={faChevronUp} className={style.icon} id={style.up}/>
         </div>
     );
 }
