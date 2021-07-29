@@ -1,14 +1,21 @@
 // backToTop.jsx
 
-import style from '../footer.module.css'
+import s from '../footer.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
+const scrollToTop = ()=>{
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'  // or auto
+    });
+};
+
 export default function BackToTop() {
     return (
-        <div className={style.backToTop}>
-            <p>back to top</p>
-            <FontAwesomeIcon icon={faChevronUp} className={style.icon} id={style.up}/>
+        <div className={s.backToTop} onClick={scrollToTop}>
+            <h4>back to top</h4>
+            <FontAwesomeIcon icon={faChevronUp} className={s.icon} id={s.up}/>
         </div>
     );
 }

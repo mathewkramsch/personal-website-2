@@ -1,6 +1,5 @@
 // index.jsx
 
-import style from '../styles/utils.module.css'
 import Home from '../components/home/home'
 import Projects from '../components/projects/projects'
 import Contact from '../components/contact/contact'
@@ -9,7 +8,7 @@ import { projectsList } from '../assets/projectsList'  // this is the projects d
 
 export default function Index() {
 	return (
-		<div className={style.sitePages}>
+		<div>
 			<Home/>
 			<Projects data={projectsList}/>
 			<Contact/>

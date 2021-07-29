@@ -21,5 +21,12 @@ export const projectsList = [  // array of project objects
         imgSrc: 'projectImgs/drum-kit.png',
         link: 'https://mathewkramsch.github.io/javascript30-drumkit/',
         srcCodeLink: 'https://github.com/mathewkramsch/javascript30-drumkit'
+    },
+    {
+        title: 'Rock Paper Scissors Game',
+        description: 'An in-browser Rock, Paper, Scissors game with UI built with JavaScript. This aplication was one of the projects assigned in The Odin Project coursework.',
+        imgSrc: 'projectImgs/rockpaperscissors.png',
+        link: 'https://mathewkramsch.github.io/odin-rockpaperscissors/',
+        srcCodeLink: 'https://github.com/mathewkramsch/odin-rockpaperscissors'
     }
 ];

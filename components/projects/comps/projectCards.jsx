@@ -1,11 +1,11 @@
 // projectCards.jsx
 
+import s from '../projects.module.scss'
 import Card from './card'
-import style from '../projects.module.css'
 
 export default function ProjectCards(props) {
     return (
-        <div className={style.projectCards}>
+        <div className={s.projectCards}>
             {props.data.map(
                 (project)=>(
                     <Card key={project.title} projectData={project}/>

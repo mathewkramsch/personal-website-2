@@ -1,0 +1,36 @@
+// typography.scss
+
+@use './variables';
+
+h1 {  // "Mathew Kramsch"
+    font-weight: bold;
+    font-size: 100px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {  // "Full-Stack Software Developer"
+    font-weight: 500;
+    font-size: 50px;
+}
+
+h3 {  // "projects", "contact me"
+    font-weight: 500;
+    font-size: 50px;
+    color: variables.$accent-main;
+}
+
+h4 {  // links, view projects, back to top, aboutInfo, projectTItle
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+    color: black;
+}
+
+
+p {  // project info
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0;
+}

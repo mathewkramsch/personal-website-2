@@ -1,7 +1,6 @@
 // home.jsx
 
-import style from './home.module.css'
-import utilStyle from '../../styles/utils.module.css'
+import s from './home.module.scss'
 import Header from './comps/header'
 import Links from './comps/links'
 import ScrollDown from './comps/scrollDown'
@@ -9,19 +8,19 @@ import { aboutInfo } from '../../assets/aboutInfo'
 
 export default function Home() {
 	return (
-		<div className={style.page}>
+		<div className={s.page}>
 			<div></div>
-			<div className={style.pageContent}>
-				<div className={style.leftContainer}>
+			<div className={s.pageContent}>
+				<div className={s.leftContainer}>
 					<Header/>
 					<Links/>
 				</div>
-				<div className={style.rightContainer}>
-					<p id={style.intro}>Hey what's up!</p>
-					<p>{aboutInfo}</p>
+				<div className={s.rightContainer}>
+					<h4 id={s.intro}>Hey what's up!</h4>
+					<h4>{aboutInfo}</h4>
 				</div>
 			</div>
-			<div className={style.bottomMiddleContainer}>
+			<div className={s.bottomMiddleContainer}>
 				<ScrollDown/>
 			</div>
 		</div>

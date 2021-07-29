@@ -1,23 +1,22 @@
 // footer.jsx
 
-import style from './footer.module.css'
-import utilStyle from '../../styles/utils.module.css'
+import s from './footer.module.scss'
 import BackToTop from './comps/backToTop'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default function Footer() {
     return (
-        <div className={style.page}>
-            <div className={style.pageContent}>
+        <div className={s.page}>
+            <div className={s.pageContent}>
                 <BackToTop/>
                 <a href='https://github.com/mathewkramsch/personal-website-2'>
-                    <FontAwesomeIcon icon={faGithub} className={style.icon} id={style.github}/>
-                    <p>view source code</p>
+                    <FontAwesomeIcon icon={faGithub} className={s.icon} id={s.github}/>
+                    <h4>view source code</h4>
                 </a>
-                <p>
+                <h4>
                     copyright &copy; 2021 mathew kramsch. all rights reserved.
-                </p>
+                </h4>
             </div>
         </div>
     );

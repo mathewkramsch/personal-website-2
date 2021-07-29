@@ -1,12 +1,12 @@
 // header.jsx
 
-import style from '../home.module.css'
+import s from '../home.module.scss'
 
 export default function Header() {
 	return (
-		<div className={style.header}>
-			<h1><div id={style.firstName}>Mathew</div>&nbsp;Kramsch</h1>
-			<p>full-stack software developer</p>
+		<div className={s.header}>
+			<h1><div id={s.firstName}>Mathew</div>&nbsp;Kramsch</h1>
+			<h2>full-stack software developer</h2>
 		</div>
 	);
 }

@@ -1,17 +1,16 @@
 // contact.jsx
 
-import style from './contact.module.css'
-import utilStyle from '../../styles/utils.module.css'
+import s from './contact.module.scss'
 import ContactInfo from './comps/contactInfo'
 
 export default function Contact() {
     return (
-        <div className={style.page}>
-            <div className={style.pageContent}>
-                <div className={style.leftContainer}>
-                    <h1>contact me</h1>
+        <div className={s.page}>
+            <div className={s.pageContent}>
+                <div className={s.leftContainer}>
+                    <h3>contact me</h3>
                 </div>
-                <div className={style.rightContainer}>
+                <div className={s.rightContainer}>
                     <ContactInfo/>
                 </div>
             </div>
