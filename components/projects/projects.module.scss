@@ -2,7 +2,9 @@
 
 @use '../../styles';
 
-.page {}
+.page {
+    background-color: styles.$bg-alt;
+}
 
 .pageContent {
     display: flex;

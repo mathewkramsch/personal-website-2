@@ -1,0 +1,85 @@
+// projects.scss
+
+@use '../../styles';
+
+.page {}
+
+.pageContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    align-items: center;
+    width: 75vw;
+    margin: auto;
+}
+
+.leftContainer {
+    position: sticky;
+    top: 0;
+    // height: 100vh;
+    display: flex;
+    h3 { margin: auto; }
+}
+
+.rightContainer {
+    width: 65%;
+}
+
+/*-----------------------------------------*/
+
+.progLangObjects {
+    // margin-top: 36vh;
+    // margin-bottom: 36vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: styles.$bg-alt;
+}
+
+.language {
+    min-width: 12vw;
+}
+
+.skillLevel {
+    width: 100%;
+}.card:hover {
+    cursor: pointer;
+    .block {
+        background-color: styles.$accent-dark;
+        border-color: styles.$accent-dark;
+    }
+    .language {
+        // h4 { font-style: italic; }
+    }
+}
+
+.skillLevelBlocks {  // the full bar part
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    background-color: styles.$light-grey;
+}
+
+.block {
+    padding: 12px;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: #999;
+    background-color: styles.$grey;
+    width: 20%;
+} #firstBlock {
+    border-left-style: solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+} #lastBlock {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
