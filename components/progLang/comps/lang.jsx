@@ -24,10 +24,13 @@ function simplify(text) {
 }
 
 export default function Lang(props) {
+    const [focus, setFocus] = useState(false);
     const toggle = ()=>{ props.toggleView(props.langData.language); }
 
     return (
-        <div className='progLangCard' onClick={toggle}>
+        <div
+            className={props.cardView==props.langData.language?'progLangCard-focus':'progLangCard'}
+            onClick={toggle}>
             <div className='collapsedLangCard'>
                 <div className='language'>
                     <img src={props.langData.iconSrc} id={simplify(props.langData.language)}
@@ -38,8 +41,11 @@ export default function Lang(props) {
                     { getSkillLevelBar(props.langData.skillLevel) }
                 </div>
             </div>
-            { props.cardView==props.langData.language &&
-                <ExtendedLangCard langData={props.langData}/> }
+            {
+                // extendLangCard(props)
+                 props.cardView==props.langData.language &&
+                <ExtendedLangCard langData={props.langData}/>
+            }
         </div>
     );
 }

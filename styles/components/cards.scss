@@ -2,6 +2,10 @@
 
 @use './colors';
 
+@mixin focus($card-bg-color) {
+    box-shadow: 0px 0px 0px 7px $card-bg-color;
+}
+
 @mixin card($card-bg-color) {
     display: flex;
     flex-direction: row;
@@ -9,26 +13,23 @@
     box-shadow: 0px 0px 5px 5px $card-bg-color;
     background-color: $card-bg-color;
     z-index: 5;
-    &:hover {
-        box-shadow: 0px 0px 0px 7px $card-bg-color;
-    }
 }
 
 //~~~~~~~~~~~~~~~~~ Project Cards ~~~~~~~~~~~~~~~~~~~~
 
-.projectCard {
+@mixin projectCard {
     @include card(colors.$bg-card-project-page);
     margin-bottom: 40px;
-    // a { img { filter: blur(2px); }}
-    // &:hover {
-    //     a { img { filter: blur(0); }}
-    // }
 }
 
-.inView {
-    @include card(colors.$bg-card-project-page);
-    margin-bottom: 40px;
-    box-shadow: 0px 0px 0px 4px colors.$bg-card-project-page;
+.projectCard {
+    @include projectCard;
+    &:hover { @include focus(colors.$bg-card-project-page) }
+}
+
+.projectCard-focus {
+    @include projectCard;
+    @include focus(colors.$bg-card-project-page);
 }
 
 .cardImage {
@@ -59,13 +60,22 @@
 
 //~~~~~~~~~~~ Programming Language Cards ~~~~~~~~~~~~~
 
-.progLangCard {
+@mixin progLangCard {
     @include card(colors.$bg-card-progLang-page);
     margin-bottom: 4vh;
-    // padding: 20px 50px 20px 20px;
     border-radius: 16px;
     flex-direction: column;
     &:hover { cursor: pointer; }
+}
+
+.progLangCard {
+    @include progLangCard;
+    &:hover { @include focus(colors.$bg-card-progLang-page) }
+}
+
+.progLangCard-focus {
+    @include progLangCard;
+    @include focus(colors.$bg-card-progLang-page);
 }
 
 .collapsedLangCard {

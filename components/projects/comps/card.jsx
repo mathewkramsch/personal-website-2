@@ -6,21 +6,21 @@ import s from '../../../styles/layout/projects.module.scss'
 export default class Card extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { inView:'false' }
+        this.state = { focus:false }
         this.cardRef = React.createRef();
         this.printPos = this.printPos.bind(this);
         this.setView = this.setView.bind(this);
     }
 
-    printPos() {
+    printPos() {  // for debugging: put "onClick={this.printPos}" in card div
         const scrollPos = window.pageYOffset;
         const divPos = this.cardRef.current.offsetTop;
         const windowHeight = window.innerHeight;
         const divOffset = divPos - scrollPos;  // offset from scroll
-        console.log('inView: ' + this.state.inView);
+        console.log('focus: ' + this.state.focus);
     }
 
-    setView() {
+    setView() {  // sets state = { focus: true } if object is in view (center of page)
         if (!this.cardRef.current) return;
         const scrollPos = window.pageYOffset;
         const divPos = this.cardRef.current.offsetTop;
@@ -30,7 +30,9 @@ export default class Card extends React.Component {
         const upperBound = windowHeight/2;
 
         const inView = (divOffset > lowerBound && divOffset < upperBound);
-        if (inView !== this.state.inView) this.setState({ inView });
+        console.log('focus: ' + this.state.focus);
+        console.log('inView: ' + inView);
+        if (inView !== this.state.focus) this.setState({ focus:inView });
     }
 
     componentDidMount() {
@@ -40,8 +42,8 @@ export default class Card extends React.Component {
 
     render() {
         return (
-            <div className={this.state.inView ? 'inView' : 'projectCard' }
-                onClick={this.printPos} ref={this.cardRef}>
+            <div className={this.state.focus ? 'projectCard-focus' : 'projectCard' }
+                ref={this.cardRef}>
                 <div className='cardImage'>
                     <a href={this.props.projectData.link}>
                         <img src={this.props.projectData.imgSrc}/>
