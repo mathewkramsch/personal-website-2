@@ -1,6 +1,6 @@
 // progLang.jsx
 
-import s from './progLang.module.scss'
+import s from '../../styles/layout/progLang.module.scss'
 import ProgLangObjects from './comps/progLangObjects'
 
 
@@ -9,7 +9,7 @@ export default function ProgLang(props) {
 		<div className={s.page}>
 			<div className={s.pageContent}>
 	            <div className={s.leftContainer}>
-                	<h3>programming languages</h3>
+                	<h2>programming languages</h2>
 	            </div>
 				<div className={s.rightContainer}>
 					<ProgLangObjects data={props.data}/>

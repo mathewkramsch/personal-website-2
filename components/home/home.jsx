@@ -1,6 +1,6 @@
 // home.jsx
 
-import s from './home.module.scss'
+import s from '../../styles/layout/home.module.scss'
 import Header from './comps/header'
 import Links from './comps/links'
 import ScrollDown from './comps/scrollDown'
@@ -16,8 +16,8 @@ export default function Home() {
 					<Links/>
 				</div>
 				<div className={s.rightContainer}>
-					<h4 id={s.intro}>Hey what's up!</h4>
-					<h4>{aboutInfo}</h4>
+					<h4 className='description' id={s.intro}>Hey what's up!</h4>
+					<h4 className='description'>{aboutInfo}</h4>
 				</div>
 			</div>
 			<div className={s.bottomMiddleContainer}>

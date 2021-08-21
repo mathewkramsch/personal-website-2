@@ -1,0 +1,60 @@
+// variables.scss
+
+//~~~~~~~~~~~~~~~~ Color Names ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$mint-green-100: #32Fca7;  // bluest
+$mint-green-200: #32fc7f;
+$mint-green-300: #32fc56;  // greenest
+
+$white-100: #fff;  // whitest
+$white-200: #f9f9f9;
+$white-300: #f7f7f7;
+$white-400: #f5f5f5;  //darkest
+
+$grey-100: #ececec;  // lightest grey
+$grey-200: #e8e8e8;
+$grey-300: #ddd;
+$grey-400: #cacaca;
+$grey-500: #b5b5b5;  // darkest grey
+
+$black-000: #000;  // blackest
+$black-150: #1e1e1e;
+$black-200: #222;
+$black-300: #333;
+$black-500: #555;
+$black-800: #888;  // lightest
+
+
+
+//~~~~~~~~~~~~~~~~ Component Colors ~~~~~~~~~~~~~~~~~~~~~~
+
+// Background Rectangle Colors
+$bg-rect-project-page-1: $white-400;  // top layer
+$bg-rect-project-page-2: $white-200;  // bottom layer
+
+$bg-rect-contact-page-1: $black-150;  // top layer
+$bg-rect-contact-page-2: $black-200;
+$bg-rect-contact-page-3: $white-300;  // bottom layer
+
+// Cards
+$bg-card-project-page: $grey-100;
+$bg-card-progLang-page: $white-400;
+$bg-card-progLang-skill: $grey-500;
+$bg-card-progLang-skill-bg: $grey-300;
+$bg-card-contact-page: $black-300;
+
+// Accents
+$fg-accent-main: $mint-green-100;
+$fg-accent-alt: $mint-green-200;
+
+// Typography
+$fg-text-black: $black-000;
+$fg-text-link: $black-300;
+$fg-text-description: $black-500;
+$fg-text-contact-page: $black-800;
+$fg-text-proficiency: $grey-500;
+
+// Icons
+$fg-icon-normal: $grey-400;
+$fg-icon-card: $grey-300;
+$fg-icon-card-alt: $grey-200;
+$fg-icon-contact-page: $black-300;

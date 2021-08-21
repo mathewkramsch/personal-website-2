@@ -1,0 +1,53 @@
+// icons.scss - for all icon objects
+
+@use './colors';
+
+.icon {
+    width: 66px;
+    color: colors.$fg-icon-normal;
+}
+
+//~~~~~~~~~~~~~~~~~ Home Page Icons ~~~~~~~~~~~~~~~~~~~~
+
+.linkIcons {
+    margin-right: -10px;
+}
+#github {}
+#linkedIn { width: 60px; }
+#resume { width: 50px; }
+
+#down { margin-top: -30px; }
+
+//~~~~~~~~~ Programming Languages Page Icons ~~~~~~~~~~~~
+
+
+#c {
+    width: 65px;
+    margin-left: -7px;
+} #java {
+    width: 45px;
+} #python {
+
+} #javascript {
+
+} #latex {
+    width: 75px;
+
+} #htmlcss {
+
+}
+
+//~~~~~~~~~~~~~~~~ Contact Page Icons ~~~~~~~~~~~~~~~~~~~
+
+#up {
+    color: colors.$fg-icon-contact-page;
+    margin-top: -75px; }
+
+#plane {
+    color: colors.$fg-icon-contact-page;
+    margin-top: -50px;
+}
+
+#githubContact {
+    color: colors.$fg-icon-contact-page;
+}

@@ -1,29 +1,45 @@
 // lang.jsx
 
-import s from '../progLang.module.scss'
+import React, { useState } from 'react';
+import s from '../../../styles/layout/progLang.module.scss'
+import ExtendedLangCard from './extendedLangCard'
 
-function printSkillLevel(x) {
-    let skillLevelBlocks = [];
-    let block = <div className={s.block}></div>;
-    let firstBlock = <div className={s.block} id={s.firstBlock}></div>
-    let lastBlock = <div className={s.block} id={s.lastBlock}></div>
-    for (let i=0; i<x; i++) {
-        if (i==0) skillLevelBlocks.push(firstBlock);
-        else if (i==x-1) skillLevelBlocks.push(lastBlock);
-        else skillLevelBlocks.push(block);
+function getSkillLevelBar(skillLevel) {
+    const parentWidth = 30;  // this is hardcoded
+    const blockWidth = parentWidth/5;  // width of a single block (in vw)
+    const skillLevelWidth = blockWidth*skillLevel;
+    let skillLevelBar = <div className='skillLevelBar' style={{width:skillLevelWidth + 'vw'}}></div>
+    return skillLevelBar;
+}
+
+function simplify(text) {
+    // returns 'text' in all lowercase, no symbols
+    let newString = '';
+    for (let i=0; i<text.length; i++) {
+        if (text[i].toUpperCase()!==text[i].toLowerCase())
+            newString += text[i].toLowerCase();
     }
-    return ( <div className={s.skillLevelBlocks}>{skillLevelBlocks}</div> );
+    console.log(newString);
+    return newString;
 }
 
 export default function Lang(props) {
+    const toggle = ()=>{ props.toggleView(props.langData.language); }
+
     return (
-        <div className={s.card}>
-            <div className={s.language}>
-                <h4>{props.langData.language}</h4>
+        <div className='progLangCard' onClick={toggle}>
+            <div className='collapsedLangCard'>
+                <div className='language'>
+                    <img src={props.langData.iconSrc} id={simplify(props.langData.language)}
+                        className='langIcons'/>
+                    <h4 className='langText'>{props.langData.language}</h4>
+                </div>
+                <div className='skillLevelOutline'>
+                    { getSkillLevelBar(props.langData.skillLevel) }
+                </div>
             </div>
-            <div className={s.skillLevel}>
-                { printSkillLevel(props.langData.skillLevel) }
-            </div>
+            { props.cardView==props.langData.language &&
+                <ExtendedLangCard langData={props.langData}/> }
         </div>
     );
 }

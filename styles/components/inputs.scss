@@ -1,0 +1,18 @@
+// inputs.scss
+
+@use './colors';
+
+.textInputs {
+
+}
+
+input, input:focus, textarea, textarea:focus  {
+    border-style: none;
+    background-color: colors.$bg-card-contact-page;
+    margin-top: 10px;
+}
+
+#name {
+    width: 50%;
+}
+#email {}

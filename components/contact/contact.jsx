@@ -1,19 +1,26 @@
 // contact.jsx
 
-import s from './contact.module.scss'
-import ContactInfo from './comps/contactInfo'
+import s from '../../styles/layout/contact.module.scss'
+import EmailInput from './comps/emailInput'
+import Footer from './comps/footer'
 
 export default function Contact() {
     return (
         <div className={s.page}>
+            <div className='rect-container-contact-page'>
+                <div className='rect-contact-page-1'></div>
+                <div className='rect-contact-page-2'></div>
+                <div className='rect-contact-page-3'></div>
+            </div>
             <div className={s.pageContent}>
                 <div className={s.leftContainer}>
-                    <h3>contact me</h3>
+                    <h2>contact me</h2>
                 </div>
                 <div className={s.rightContainer}>
-                    <ContactInfo/>
+                    <EmailInput/>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }

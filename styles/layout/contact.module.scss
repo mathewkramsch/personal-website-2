@@ -1,0 +1,51 @@
+// contact.scss
+
+// @use '../../styles';
+
+.page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pageContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85vw;
+    margin: auto;
+}
+
+.leftContainer {
+    z-index: 1;
+}
+
+.rightContainer {
+    width: 65%;
+    z-index: 1;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 95vw;
+    margin: 0 auto 30px auto;
+    z-index: 1;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.textInputs {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}

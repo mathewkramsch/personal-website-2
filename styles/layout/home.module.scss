@@ -1,0 +1,41 @@
+// home.scss
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.pageContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 88vw;
+    margin: auto;
+}
+
+.leftContainer {}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 38%;
+    #intro { margin-bottom: 25px; }
+}
+
+.bottomMiddleContainer {
+    margin-bottom: 100px;
+}
+
+/*-----------------------------------------*/
+
+.links {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

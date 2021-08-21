@@ -1,0 +1,87 @@
+// typography.scss
+
+@use './colors';
+
+h1 {  // title: "Mathew Kramsch"
+    font-weight: bold;
+    font-size: 150px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+} #firstName {
+    color: colors.$fg-accent-main;
+}
+
+h2 {  // page-title: "projects", "contact me"
+    font-weight: 500;
+    font-size: 80px;
+    color: colors.$fg-accent-main;
+}
+
+h3 {  // subtitle: "Full-Stack Software Developer"
+    font-weight: 500;
+    font-size: 60px;
+}
+
+
+h4 {  // links, view projects, back to top, aboutInfo, projectTItle
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+    color: black;
+    z-index: 1;
+    color: colors.$fg-text-link;
+    display: inline-flex;
+    align-items: center;
+}
+.italic { font-style: italic; }  // view projects, back to top,
+.description { color: colors.$fg-text-description !important; }
+
+
+p {  // project description, progLang description
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0;
+    color: colors.$fg-text-description;
+}
+
+
+a {  // links, Project Title link, view source code link
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.inputText {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: inherit;
+    color: colors.$fg-text-contact-page;
+}
+
+
+.srcCodeLink {  // View Source Code
+    font-style: italic;
+    font-weight: 400;
+    color: colors.$fg-text-contact-page;
+    display: inline-block;
+    &:hover { cursor: pointer; }
+}
+
+.footerText {
+    color: colors.$fg-text-contact-page;
+}
+
+#copyRight {
+    font-size: 40px;
+    font-weight: 800;
+    margin-right: 5px;
+    color: colors.$fg-text-contact-page;
+}
+
+.proficiency {
+    font-size: 20px;
+    font-weight: 500;
+    color: colors.$fg-text-proficiency;
+}

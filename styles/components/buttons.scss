@@ -1,0 +1,47 @@
+// buttons.scss
+
+@use './colors';
+
+@mixin button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
+        h4 {font-weight: 600; }
+    }
+}
+
+// ~~~~~~~~~~~~~~~~~~~~ Home Page Buttons ~~~~~~~~~~~~~~~~~~~~~~
+
+.linkButton {
+    @include button;
+    flex-direction: row;
+    &:hover { .icon { color: colors.$fg-accent-alt; }}
+}
+
+.scrollDown {
+    @include button;
+    &:hover { .icon { color: colors.$fg-accent-alt; }}
+}
+
+// ~~~~~~~~~~~~~~~~~~~ Contact Page Buttons ~~~~~~~~~~~~~~~~~~~~
+
+.backToTop {
+    @include button;
+    margin-bottom: 80px;
+}
+
+.viewSrcCode {
+    @include button;
+    flex-direction: row;
+    h4 {margin-left: -10px;}
+}
+
+.submitButton {
+    @include button;
+    &:hover {
+        .icon {}
+        h4 {}
+    }
+}

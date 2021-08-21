@@ -1,0 +1,32 @@
+// projects.scss
+
+.page {}
+
+.pageContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    width: 85vw;
+    margin: auto;
+    z-index: 1;
+}
+
+.leftContainer {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    h2 { margin: auto; }
+}
+
+.rightContainer {
+    width: 65%;
+    z-index: 1;
+
+}
+
+.projectCards {
+    margin-top: 36vh;
+    margin-bottom: 36vh;
+}
