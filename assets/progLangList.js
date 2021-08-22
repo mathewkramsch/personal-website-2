@@ -28,7 +28,7 @@ export const progLangList = [
     {
         language: 'LaTeX',
         skillLevel: '4',
-        langDescription: "Check out my resume. made that shit from fucking scratch using latex. i can do ANYTHING in latex. i'll make ur documents look fresh af.",
+        langDescription: "Check out my resume. made that shit from fucking scratch using latex. I can do ANYTHING in latex. i'll make ur documents look fresh af.",
         iconSrc: '/langIcons/latex.svg'
     },
     {
