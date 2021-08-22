@@ -34,8 +34,8 @@
 .rect-project-page-2 {  // bottom layer
     @include backgroundRectangle(colors.$bg-rect-project-page-2, -22.7deg);
     z-index: -1;
-    height: 165vh;
-    margin-top: 60vh;
+    height: 167vh;
+    margin-top: 57vh;
 }
 
 //~~~~~~~~~~ Contact Page ~~~~~~~~~~~~~~~~~~
@@ -43,6 +43,7 @@
 .rect-container-contact-page {
     @include rectangleContainer;
     height: 150vh;
+    padding-top: 30px;
     margin-left: 0;
     width: 99.2vw;
 }

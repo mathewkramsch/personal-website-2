@@ -10,17 +10,22 @@ export default function Home() {
 	return (
 		<div className={s.page}>
 			<div></div>
-			<div className={s.pageContent}>
-				<div className={s.leftContainer}>
-					<Header/>
-					<Links/>
+			<div className={s.topContainer}>
+				<div className={s.titleContainer}>
+					<h1><div id='firstName'>Mathew</div>&nbsp;Kramsch</h1>
 				</div>
-				<div className={s.rightContainer}>
-					<h4 className='description' id={s.intro}>Hey what's up!</h4>
-					<h4 className='description'>{aboutInfo}</h4>
+				<div className={s.subHeader}>
+					<div className={s.subHeaderLeft}>
+						<h3>full-stack software developer</h3>
+						<Links/>
+					</div>
+					<div className={s.subHeaderRight}>
+						<h4 className='description' id={s.intro}>Hey what's up!</h4>
+						<h4 className='description'>{aboutInfo}</h4>
+					</div>
 				</div>
 			</div>
-			<div className={s.bottomMiddleContainer}>
+			<div className={s.bottomContainer}>
 				<ScrollDown/>
 			</div>
 		</div>
