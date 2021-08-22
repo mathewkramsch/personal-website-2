@@ -2,7 +2,9 @@
 
 // @use '../../styles';
 
-.page {}
+.page {
+    height: 120vh;
+}
 
 .pageContent {
     display: flex;
@@ -16,7 +18,6 @@
 }
 
 .leftContainer {
-    h3 { margin: auto; }
     margin-bottom: 35vh;
 }
 
@@ -29,7 +30,5 @@
 /*-----------------------------------------*/
 
 .progLangObjects {
-    // margin-top: 36vh;
-    // margin-bottom: 36vh;
     padding-left: 80px;
 }

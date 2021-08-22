@@ -29,7 +29,7 @@
 
 .backToTop {
     @include button;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .viewSrcCode {
@@ -40,8 +40,5 @@
 
 .submitButton {
     @include button;
-    &:hover {
-        .icon {}
-        h4 {}
-    }
+    &:hover { h4 { color: colors.$fg-accent-alt; }}
 }

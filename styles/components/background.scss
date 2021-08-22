@@ -49,19 +49,19 @@
 
 .rect-contact-page-1 {  // top layer
     @include backgroundRectangle(colors.$bg-rect-contact-page-1, 35.87deg);
-    margin-top: 140vh;
+    margin-top: 130vh;
 }
 
 .rect-contact-page-2 {  // bottom layer
     @include backgroundRectangle(colors.$bg-rect-contact-page-2, -13.65deg);
     z-index: -1;
     height: 165vh;
-    margin-top: 50vh;
+    margin-top: 35vh;
 }
 
 .rect-contact-page-3 {  // bottom layer
     @include backgroundRectangle(colors.$bg-rect-contact-page-3, -18.17deg);
     z-index: -2;
     height: 165vh;
-    margin-top: 50vh;
+    margin-top: 35vh;
 }

@@ -26,8 +26,8 @@ export default class Card extends React.Component {
         const divPos = this.cardRef.current.offsetTop;
         const windowHeight = window.innerHeight;
         const divOffset = divPos - scrollPos;  // offset from scroll
-        const lowerBound = windowHeight/4 - windowHeight*0.1;
-        const upperBound = windowHeight/2;
+        const lowerBound = windowHeight/4 - windowHeight*0.03;  // top of page
+        const upperBound = windowHeight/2;  // bottom of page
 
         const inView = (divOffset > lowerBound && divOffset < upperBound);
         console.log('focus: ' + this.state.focus);

@@ -25,6 +25,8 @@
 .projectCard {
     @include projectCard;
     &:hover { @include focus(colors.$bg-card-project-page) }
+    margin-left: 30px;
+    margin-right: -30px;
 }
 
 .projectCard-focus {

@@ -19,11 +19,14 @@
 
 .leftContainer {
     z-index: 1;
+    display: flex;
+    h2 { margin: auto; }
 }
 
 .rightContainer {
     width: 65%;
     z-index: 1;
+    margin-top: 10vh;
 }
 
 .footer {

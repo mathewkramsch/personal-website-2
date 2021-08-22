@@ -39,7 +39,7 @@ export default function EmailInput() {
                     placeholder='Name'/>
                 <input type="text" id="email" name="fname" className='inputText'
                     placeholder='Email Address'/>
-                <textarea name="message" rows="10" cols="30" className='inputText'
+                <textarea name="message" rows="12" cols="30" className='inputText'
                     placeholder='Your message to mathewkramsch@ucsb.edu:'>
                 </textarea>
             </div>

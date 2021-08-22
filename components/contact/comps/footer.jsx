@@ -19,7 +19,7 @@ export default function Footer() {
                 <div id='copyRight'>&copy;</div>2021 Mathew Kramsch
             </h4>
             <div className='backToTop' onClick={scrollToTop}>
-                <h4 className='italicc footerText'>back to top</h4>
+                <h4 className='italic footerText'>back to top</h4>
                 <FontAwesomeIcon icon={faChevronUp} className='icon' id='up'/>
             </div>
             <a href='https://github.com/mathewkramsch/personal-website-2' className='viewSrcCode'>
