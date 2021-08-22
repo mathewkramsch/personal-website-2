@@ -3,18 +3,16 @@
 @use './colors';
 
 .icon {
-    width: 66px;
+    font-size: 66px;
     color: colors.$fg-icon-normal;
 }
 
 //~~~~~~~~~~~~~~~~~ Home Page Icons ~~~~~~~~~~~~~~~~~~~~
 
-.linkIcons {
-    margin-right: -10px;
-}
-#github {}
-#linkedIn { width: 60px; }
-#resume { width: 50px; }
+.linkIcons { margin-right: -10px; }
+// #github { font-size: 60px;}
+// #linkedIn { font-size: 60px; }
+// #resume { font-size: 60px; }
 
 #down { margin-top: -30px; }
 
@@ -41,7 +39,7 @@
 
 #up {
     color: colors.$fg-icon-contact-page;
-    margin-top: -75px; }
+    margin-top: -70px; }
 
 #plane {
     color: colors.$fg-icon-contact-page;

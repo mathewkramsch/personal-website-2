@@ -10,7 +10,7 @@ export default function Links() {
 	return (
 		<div className={s.links}>
             <a href='https://github.com/mathewkramsch' className='linkButton'>
-                <FontAwesomeIcon icon={faGithub} className='icon linkIcons' id='gitHub'/>
+                <FontAwesomeIcon icon={faGithub} className='icon linkIcons' id='github'/>
 				<h4 className='button'>github</h4>
             </a>
             <a href='https://www.linkedin.com/in/mathew-kramsch/' className='linkButton'>
