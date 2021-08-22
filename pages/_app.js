@@ -1,5 +1,6 @@
 // _app.js
 
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import './globals.scss'
 import Head from 'next/head'
 
