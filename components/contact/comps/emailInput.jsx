@@ -14,7 +14,7 @@ const sendEmailButton = (status, toggleStatus)=>{
     );
     if (status==='sent') submitButtonChild = (
         <>
-            <h4 className='italic footerText emailSent'>email sent</h4>
+            <h4 className='italic footerText emailSent'>jk this doesn't work yet</h4>
         </>
     );
 
