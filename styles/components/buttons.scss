@@ -19,6 +19,7 @@
     flex-direction: row;
     &:hover { .icon { color: colors.$fg-accent-alt; }}
     margin-right: 3vw;
+    width: 180px;
 }
 
 .scrollDown {
@@ -36,10 +37,16 @@
 .viewSrcCode {
     @include button;
     flex-direction: row;
-    h4 {margin-left: -10px;}
+    justify-content: flex-end;
+    h4 {
+        margin-left: -10px;
+        width: 268px;
+    }
+    width: 360px;
 }
 
 .submitButton {
     @include button;
+    h4 { width: 178px; }
     &:hover { h4 { color: colors.$fg-accent-alt; }}
 }

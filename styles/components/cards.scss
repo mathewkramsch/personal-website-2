@@ -25,13 +25,14 @@
 .projectCard {
     @include projectCard;
     &:hover { @include focus(colors.$bg-card-project-page) }
-    margin-left: 30px;
-    margin-right: -30px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .projectCard-focus {
     @include projectCard;
     @include focus(colors.$bg-card-project-page);
+    padding-left: 10px;
 }
 
 .cardImage {

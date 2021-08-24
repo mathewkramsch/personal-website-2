@@ -10,11 +10,12 @@
 //~~~~~~~~~~~~~~~~~ Home Page Icons ~~~~~~~~~~~~~~~~~~~~
 
 .linkIcons { margin-right: -10px; }
-// #github { font-size: 60px;}
-// #linkedIn { font-size: 60px; }
-// #resume { font-size: 60px; }
+#github {}
+#linkedIn {}
+#resume {}
 
 #down { margin-top: -30px; }
+#circleDown { margin-top: -30px; }
 
 //~~~~~~~~~ Programming Languages Page Icons ~~~~~~~~~~~~
 
@@ -39,7 +40,12 @@
 
 #up {
     color: colors.$fg-icon-contact-page;
-    margin-top: -70px; }
+    margin-top: -70px;
+}
+#circleUp {
+    color: colors.$fg-icon-contact-page;
+    margin-top: -70px;
+}
 
 #plane {
     color: colors.$fg-icon-contact-page;

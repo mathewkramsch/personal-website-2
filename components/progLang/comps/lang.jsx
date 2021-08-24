@@ -41,11 +41,8 @@ export default function Lang(props) {
                     { getSkillLevelBar(props.langData.skillLevel) }
                 </div>
             </div>
-            {
-                // extendLangCard(props)
-                 props.cardView==props.langData.language &&
-                <ExtendedLangCard langData={props.langData}/>
-            }
+            { props.cardView==props.langData.language &&
+                <ExtendedLangCard langData={props.langData}/> }
         </div>
     );
 }
