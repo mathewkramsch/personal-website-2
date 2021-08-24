@@ -40,7 +40,7 @@ export default function EmailInput() {
                 <input type="text" id="email" name="fname" className='inputText'
                     placeholder='Email Address'/>
                 <textarea name="message" rows="12" cols="30" className='inputText'
-                    placeholder='Your message to mathewkramsch@ucsb.edu:'>
+                    placeholder='Your message to mathewkramsch@ucsb.edu'>
                 </textarea>
             </div>
             <div className='submitButton' onClick={toggleStatus}>

@@ -4,37 +4,37 @@ export const progLangList = [
     {
         language: 'C++',
         skillLevel: '5',  // out of 5
-        langDescription: 'I have 3 years of experience in C++ including socket programming in C, client/surver communication, advanced algorithms and data structures.',
+        langDescription: 'Advanced experience with C++ including algorithm optimization, data structures, socket programming in C, client/surver communication, object oriented programming, and industry best practices.',
         iconSrc: '/langIcons/c++.svg'
     },
     {
         language: 'Java',
         skillLevel: '2',
-        langDescription: 'U need something coded in Java? I got u fam. Bro i been writing java since birth.',
+        langDescription: 'Intermediate knowledge of syntax and data structures.',
         iconSrc: '/langIcons/java.svg'
     },
     {
         language: 'Python',
         skillLevel: '3',
-        langDescription: 'Computational science and shit, numpy, matrices, algorithms, plotting shit in graphs',
+        langDescription: 'Computational science, matrix computation, and numerical algorithms using numpy, matplotlib, Jupyter Notebook.',
         iconSrc: '/langIcons/python.svg'
     },
     {
         language: 'JavaScript',
         skillLevel: '4',
-        langDescription: 'Took an online course on JS, experience with react, next.js, node.js, full-on web-app type shit dawg.',
+        langDescription: 'Experience with full-scale web application development using both vanilla JavaScript and frameworks/tools including React, Next.js, Node.js, MongoDB database management, server management with Heroku and Vercel.',
         iconSrc: '/langIcons/javascript.svg'
     },
     {
         language: 'LaTeX',
         skillLevel: '4',
-        langDescription: "Check out my resume. made that shit from fucking scratch using latex. I can do ANYTHING in latex. i'll make ur documents look fresh af.",
+        langDescription: "Experience with LaTeX for formatting for professional, mathematical, and scientific documents. See resume for example.",
         iconSrc: '/langIcons/latex.svg'
     },
     {
         language: 'HTML/CSS',
         skillLevel: '5',
-        langDescription: 'Responsive web and mobile design, sass, flexbox grids and shit, search engine optimization. Bruh i mean check out this website, this aint no fuckin wordpress template its pure html & css (and react, next.js, and sass) coded from an empty file using my own goddamn blood sweat and tears. Just dont open it on your smartphone i havent gotten around to mobile optimization yet.',
+        langDescription: 'Responsive web design with mobile optimization and search engine optimization. Building clean and intuitive UI/UX design with complex layouts for website landing pages, blogs, web applications, browser-based games. Using SASS and various JavaScript frameworks to structure codebase and Figma to design and prototype mobile and desktop wireframes for sites.',
         iconSrc: '/langIcons/html.svg'
     }
 ];
