@@ -28,7 +28,6 @@ h4 {  // links, view projects, back to top, aboutInfo, projectTItle
     font-weight: 500;
     font-size: 30px;
     margin: 0;
-    color: black;
     z-index: 1;
     color: colors.$fg-text-link;
     display: inline-flex;
@@ -36,6 +35,14 @@ h4 {  // links, view projects, back to top, aboutInfo, projectTItle
 }
 .italic { font-style: italic; }  // view projects, back to top,
 .description { color: colors.$fg-text-description !important; }
+input[type=submit] {
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+    z-index: 1;
+    color: colors.$fg-text-contact-page;
+    font-family: inherit;
+}
 
 
 p {  // project description, progLang description

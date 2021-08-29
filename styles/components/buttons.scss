@@ -47,6 +47,16 @@
 
 .submitButton {
     @include button;
-    h4 { width: 178px; }
-    &:hover { h4 { color: colors.$fg-accent-alt; }}
+    &:hover { input {
+        color: colors.$fg-accent-alt;
+        font-weight: 600;
+    }}
+}
+
+input[type=submit] {
+    background: none;
+    cursor: pointer;
+    width: 236px;
+    display: inline-flex;
+    justify-content: center;
 }
