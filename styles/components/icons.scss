@@ -55,3 +55,15 @@
 #githubContact {
     color: colors.$fg-icon-contact-page;
 }
+
+#X {
+    margin-top: 20px;
+    color: colors.$fg-icon-contact-page;
+    z-index: 2;
+    font-size: 37px;
+} #XPlaceHolder {
+    margin-top: 20px;
+    color: transparent;
+    z-index: 2;
+    font-size: 37px;
+}

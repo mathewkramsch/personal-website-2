@@ -47,11 +47,13 @@
 
 .submitButton {
     @include button;
+} .sendEmail {
     &:hover { input {
         color: colors.$fg-accent-alt;
         font-weight: 600;
     }}
 }
+
 
 input[type=submit] {
     background: none;

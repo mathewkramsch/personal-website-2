@@ -12,17 +12,22 @@
     margin: 13px;
     &:focus {
         outline: none;
+        &::placeholder {
+            color: transparent;
+        }
     }
 }
 
 input {
     @include input;
+    font-family: inherit;
 }
 #name { width: 50%; }
-#email {}
+#email { width: 100%; }
 
 textarea {
     @include input;
+    width: 100%;
     resize: none;
     box-shadow: 0px 0px 0px 20px colors.$bg-rect-contact-page-2;
 }
