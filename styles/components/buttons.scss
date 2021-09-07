@@ -6,8 +6,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
     &:hover {
-        cursor: pointer;
         h4 {font-weight: 600; }
     }
 }
@@ -20,9 +20,11 @@
     &:hover { .icon { color: colors.$fg-accent-alt; }}
     margin-right: 3vw;
     width: 180px;
+    z-index: 1;
 }
 
 .scrollDown {
+    z-index: 1;
     @include button;
     &:hover { .icon { color: colors.$fg-accent-alt; }}
 }
