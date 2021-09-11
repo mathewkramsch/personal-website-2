@@ -1,8 +1,19 @@
 // typography.scss
 
 @use './colors';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Font Variables
+$montserrat: 'Montserrat', sans-serif;
+$inter: 'Inter', sans-serif;
+$work-sans: 'Work Sans', sans-serif;
+
+$title-font: $inter;
+$body-font: $work-sans;
+
 
 h1 {  // title: "Mathew Kramsch"
+    font-family: $title-font;
     font-weight: bold;
     font-size: 150px;
     margin: 0;
@@ -13,18 +24,20 @@ h1 {  // title: "Mathew Kramsch"
 }
 
 h2 {  // page-title: "projects", "contact me"
-    font-weight: 500;
+    font-family: $title-font;
+    font-weight: 600;
     font-size: 80px;
     color: colors.$fg-accent-main;
 } #contactme { color: colors.$fg-accent-alt; }
 
 h3 {  // subtitle: "Full-Stack Software Developer"
+    font-family: $title-font;
     font-weight: 500;
     font-size: 60px;
 }
 
-
 h4 {  // links, view projects, back to top, aboutInfo, projectTItle
+    font-family: $body-font;
     font-weight: 500;
     font-size: 30px;
     margin: 0;
@@ -36,16 +49,17 @@ h4 {  // links, view projects, back to top, aboutInfo, projectTItle
 .italic { font-style: italic; }  // view projects, back to top,
 .description { color: colors.$fg-text-description !important; }
 input[type=submit] {
+    font-family: $body-font;
     font-weight: 500;
     font-size: 30px;
     margin: 0;
     z-index: 1;
     color: colors.$fg-text-contact-page;
-    font-family: inherit;
 }
 
 
 p {  // project description, progLang description
+    font-family: $body-font;
     font-weight: 400;
     font-size: 25px;
     margin: 0;
@@ -61,9 +75,9 @@ a {  // links, Project Title link, view source code link
 }
 
 .inputText {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
-    font-family: inherit;
+    font-family: $body-font;
     color: colors.$fg-text-contact-page;
 }
 
