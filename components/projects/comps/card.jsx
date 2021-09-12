@@ -44,14 +44,14 @@ export default class Card extends React.Component {
         return (
             <div className={this.state.focus ? 'projectCard-focus' : 'projectCard' }
                 ref={this.cardRef}>
-                <div className='cardImage'>
+                <div className={this.state.focus ? 'cardImage cardImage-focus' : 'cardImage' }>
                     <a href={this.props.projectData.link}>
                         <img src={this.props.projectData.imgSrc}/>
                     </a>
                 </div>
                 <div className='cardInfo'>
                     <a href={this.props.projectData.link}>
-                        <h4>{this.props.projectData.title}</h4>
+                        <h4 id='projectTitle'>{this.props.projectData.title}</h4>
                     </a>
                     <p>{this.props.projectData.description}
                         <a href={this.props.projectData.srcCodeLink} className='srcCodeLink'>

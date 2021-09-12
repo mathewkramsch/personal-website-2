@@ -25,14 +25,40 @@
 .projectCard {
     @include projectCard;
     &:hover { @include focus(colors.$bg-card-project-page) }
-    margin-left: 10px;
-    margin-right: 10px;
+    animation-duration: 0.3s;
+    animation-name: move-right;
 }
 
 .projectCard-focus {
     @include projectCard;
     @include focus(colors.$bg-card-project-page);
-    padding-left: 10px;
+    animation-duration: 0.3s;
+    animation-name: move-left;
+    margin-left: -40px;
+    margin-right: 40px;
+    a { img { filter: blur(0); }}
+}
+
+@keyframes move-left {
+    from {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    to {
+        margin-left: -40px;
+        margin-right: 40px;
+    }
+}
+
+@keyframes move-right {
+    from {
+        margin-left: -40px;
+        margin-right: 40px;
+    }
+    to {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .cardImage {
@@ -42,11 +68,15 @@
             width: 332px;
             height: 240px;
             border-radius: 19px;
-            // filter: blur(2px);
+            filter: blur(1px);
             &:hover {
                 filter: opacity(60%);
             }
     }}
+}
+
+.cardImage-focus {
+    a { img { filter: blur(0); }}
 }
 
 .cardInfo {
@@ -74,11 +104,25 @@
 .progLangCard {
     @include progLangCard;
     &:hover { @include focus(colors.$bg-card-progLang-page) }
+    animation: move-right 0.5s, close 0.3s;
+}
+
+@keyframes close {
+    from {
+        padding-bottom: 10vh;
+    }
+    to {
+        padding-bottom: 0;
+    }
 }
 
 .progLangCard-focus {
     @include progLangCard;
     @include focus(colors.$bg-card-progLang-page);
+    animation-name: move-left;
+    animation-duration: 0.5s;
+    margin-left: -40px;
+    margin-right: 40px;
 }
 
 .collapsedLangCard {
@@ -126,6 +170,19 @@
 
 .extendedLangCard {
     margin: 0 1.5vw 1.5vw 1.5vw;
+    animation-name: open;
+
+    animation-duration: 0.5s;
+    overflow-y: hidden;
+}
+
+@keyframes open {
+    from {
+        max-height: 0px;
+    }
+    to {
+        max-height: 300px;
+    }
 }
 
 .proficiencyIndicator {

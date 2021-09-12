@@ -45,6 +45,8 @@ h4 {  // links, view projects, back to top, aboutInfo, projectTItle
     color: colors.$fg-text-link;
     display: inline-flex;
     align-items: center;
+} #projectTitle {
+    &:hover { font-weight: 600; }
 }
 .italic { font-style: italic; }  // view projects, back to top,
 .description { color: colors.$fg-text-description !important; }
@@ -85,9 +87,13 @@ a {  // links, Project Title link, view source code link
 .srcCodeLink {  // View Source Code
     font-style: italic;
     font-weight: 400;
-    color: colors.$fg-text-contact-page;
+    color: colors.$fg-text-proficiency;
     display: inline-block;
-    &:hover { cursor: pointer; }
+    &:hover {
+        cursor: pointer;
+        // font-weight: 600;
+        text-decoration: line-through;
+    }
 }
 
 .footerText {
@@ -98,11 +104,11 @@ a {  // links, Project Title link, view source code link
     color: colors.$fg-icon-contact-page;
 }
 
-
 #copyRight {
     font-size: 40px;
-    font-weight: 800;
-    margin-right: 5px;
+    font-weight: 600;
+    margin-bottom: -3px;
+    margin-right: 10px;
     color: colors.$fg-text-contact-page;
 }
 
