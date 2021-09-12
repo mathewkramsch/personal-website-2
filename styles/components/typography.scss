@@ -21,6 +21,8 @@ h1 {  // title: "Mathew Kramsch"
     flex-direction: row;
 } #firstName {
     color: colors.$fg-accent-main;
+    transition: all 0.3s ease 0.3s;
+    &:hover { color: colors.$fg-accent-alt; }
 }
 
 h2 {  // page-title: "projects", "contact me"

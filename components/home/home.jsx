@@ -8,6 +8,7 @@ import { aboutInfo } from '../../assets/aboutInfo'
 
 export default function Home() {
 	return (
+		<div className='bg-home-page-email-pattern'>
 		<div className={s.page}>
 			<div></div>
 			<div className={s.topContainer}>
@@ -28,6 +29,7 @@ export default function Home() {
 			<div className={s.bottomContainer}>
 				<ScrollDown/>
 			</div>
+		</div>
 		</div>
 	);
 }

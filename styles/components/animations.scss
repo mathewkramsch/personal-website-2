@@ -8,7 +8,6 @@
 .progLangCard-focus { animation: move-left 0.3s; }
 .extendedLangCard { animation: open 0.3s; }
 
-
 @keyframes move-left {
     from {
         margin-left: 0;
@@ -33,4 +32,18 @@
 } @keyframes close {
     from { padding-bottom: 10vh; }
     to { padding-bottom: 0; }
+}
+
+// animation on input
+
+form {
+    animation: move-up 2s;
+}
+
+@keyframes move-up {
+    from {
+        margin-top: 100px;
+    } to {
+        margin-top: 0px;
+    }
 }

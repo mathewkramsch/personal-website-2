@@ -50,10 +50,17 @@
 .submitButton {
     @include button;
 } .sendEmail {
-    &:hover { input {
-        color: colors.$fg-accent-alt;
-        font-weight: 600;
-    }}
+    &:hover {
+        input {
+            color: colors.$fg-accent-alt;
+            font-weight: 600;
+        } #plane {
+            transform: translate(30px, -60px);
+        }
+    }
+}
+#plane {
+    transition: transform 0.5s;
 }
 
 
