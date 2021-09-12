@@ -1,0 +1,36 @@
+// animations.scss - for all animations
+
+// animations on cards
+
+.projectCard { animation: move-right 0.3s; }
+.projectCard-focus { animation: move-left 0.3s; }
+.progLangCard { animation: move-right 0.3s, close 0.3s; }
+.progLangCard-focus { animation: move-left 0.3s; }
+.extendedLangCard { animation: open 0.3s; }
+
+
+@keyframes move-left {
+    from {
+        margin-left: 0;
+        margin-right: 0;
+    } to {
+        margin-left: -40px;
+        margin-right: 40px;
+    }
+} @keyframes move-right {
+    from {
+        margin-left: -40px;
+        margin-right: 40px;
+    } to {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@keyframes open {
+    from { max-height: 0px; }
+    to { max-height: 300px; }
+} @keyframes close {
+    from { padding-bottom: 10vh; }
+    to { padding-bottom: 0; }
+}

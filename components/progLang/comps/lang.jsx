@@ -19,7 +19,6 @@ function simplify(text) {
         if (text[i].toUpperCase()!==text[i].toLowerCase())
             newString += text[i].toLowerCase();
     }
-    console.log(newString);
     return newString;
 }
 

@@ -11,15 +11,15 @@ export default function Links() {
 		<div className={s.links}>
             <a href='https://github.com/mathewkramsch' className='linkButton'>
                 <FontAwesomeIcon icon={faGithub} className='icon linkIcons' id='github'/>
-				<h4 className='button'>github</h4>
+				<h4 className='button'>GitHub</h4>
             </a>
             <a href='https://www.linkedin.com/in/mathew-kramsch/' className='linkButton'>
                 <FontAwesomeIcon icon={faLinkedin} className='icon linkIcons' id='linkedIn'/>
-                <h4 className='button'>linkedin</h4>
+                <h4 className='button'>LinkedIn</h4>
             </a>
             <a href='/Resume.pdf' className='linkButton'>
 				<FontAwesomeIcon icon={faFileAlt} className='icon linkIcons' id='resume'/>
-				<h4 className='button'>resume</h4>
+				<h4 className='button'>Resume</h4>
 			</a>
 		</div>
 	);

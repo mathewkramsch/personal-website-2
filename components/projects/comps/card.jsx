@@ -6,10 +6,11 @@ import s from '../../../styles/layout/projects.module.scss'
 export default class Card extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { focus:false }
+        this.state = { focus:false, imgHover:false }
         this.cardRef = React.createRef();
         this.printPos = this.printPos.bind(this);
         this.setView = this.setView.bind(this);
+        this.toggleHoverImg = this.toggleHoverImg.bind(this);
     }
 
     printPos() {  // for debugging: put "onClick={this.printPos}" in card div
@@ -30,9 +31,13 @@ export default class Card extends React.Component {
         const upperBound = windowHeight/2;  // bottom of page
 
         const inView = (divOffset > lowerBound && divOffset < upperBound);
-        console.log('focus: ' + this.state.focus);
-        console.log('inView: ' + inView);
+        // console.log('focus: ' + this.state.focus);
+        // console.log('inView: ' + inView);
         if (inView !== this.state.focus) this.setState({ focus:inView });
+    }
+
+    toggleHoverImg() {  // reverses state of imgHover
+        this.setState({ imgHover:!this.state.imgHover });
     }
 
     componentDidMount() {
@@ -44,7 +49,9 @@ export default class Card extends React.Component {
         return (
             <div className={this.state.focus ? 'projectCard-focus' : 'projectCard' }
                 ref={this.cardRef}>
-                <div className={this.state.focus ? 'cardImage cardImage-focus' : 'cardImage' }>
+                <div className={this.state.focus ? 'cardImage cardImage-focus' : 'cardImage' }
+                    onMouseEnter={this.toggleHoverImg} onMouseLeave={this.toggleHoverImg}>
+                    { this.state.imgHover && <p id='openProject'>Open Project</p> }
                     <a href={this.props.projectData.link}>
                         <img src={this.props.projectData.imgSrc}/>
                     </a>

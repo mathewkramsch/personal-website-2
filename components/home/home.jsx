@@ -16,7 +16,7 @@ export default function Home() {
 				</div>
 				<div className={s.subHeader}>
 					<div className={s.subHeaderLeft}>
-						<h3>full-stack software developer</h3>
+						<h3>Full-stack Software Developer</h3>
 						<Links/>
 					</div>
 					<div className={s.subHeaderRight}>
