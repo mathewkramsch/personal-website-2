@@ -14,7 +14,7 @@ export default function Contact() {
             </div>
             <div className={s.pageContent}>
                 <div className={s.leftContainer}>
-                    <h2 id='contactme'>Contact Me</h2>
+                    <h2 id='contactme'>Send me an email -></h2>
                 </div>
                 <div className={s.rightContainer}>
                     <EmailInput/>

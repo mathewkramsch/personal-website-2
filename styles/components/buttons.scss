@@ -8,7 +8,7 @@
     align-items: center;
     cursor: pointer;
     &:hover {
-        h4 {font-weight: 600; }
+        h4 { font-weight: 600; }
     }
 }
 
@@ -17,7 +17,13 @@
 .linkButton {
     @include button;
     flex-direction: row;
-    &:hover { .icon { color: colors.$fg-accent-alt; }}
+    &:hover {
+        .icon { color: colors.$fg-accent-alt; }
+        h4 {
+            font-weight: 500;
+            opacity: 70%;
+        }
+    }
     margin-right: 3vw;
     width: 180px;
     z-index: 1;

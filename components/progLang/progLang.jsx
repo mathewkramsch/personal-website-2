@@ -9,7 +9,7 @@ export default function ProgLang(props) {
 		<div className={s.page}>
 			<div className={s.pageContent}>
 	            <div className={s.leftContainer}>
-                	<h2>Programming Languages</h2>
+                	<h2>Programming and mark-up languages</h2>
 	            </div>
 				<div className={s.rightContainer}>
 					<ProgLangObjects data={props.data}/>

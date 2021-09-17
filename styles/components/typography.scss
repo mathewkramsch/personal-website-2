@@ -14,33 +14,38 @@ $body-font: $work-sans;
 
 h1 {  // title: "Mathew Kramsch"
     font-family: $title-font;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 150px;
     margin: 0;
     display: flex;
     flex-direction: row;
 } #firstName {
-    color: colors.$fg-accent-main;
-    transition: all 0.3s ease 0.3s;
-    &:hover { color: colors.$fg-accent-alt; }
+    background: linear-gradient(90deg, colors.$fg-accent-main, colors.$mint-green-300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {  // page-title: "projects", "contact me"
     font-family: $title-font;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 80px;
-    color: colors.$fg-accent-main;
-} #contactme { color: colors.$fg-accent-alt; }
+    color: colors.$fg-page-title;
+} #contactme {
+    background: linear-gradient(45deg, colors.$fg-accent-main, colors.$mint-green-300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 h3 {  // subtitle: "Full-Stack Software Developer"
     font-family: $title-font;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 60px;
+    color: colors.$fg-page-title;
     user-select: none;
     cursor: pointer;
     transition: all 0.2s;
     &:hover {
-        opacity: 65%;
+        opacity: 75%;
     }
 }
 
