@@ -36,9 +36,7 @@
 
 // animation on input
 
-form {
-    animation: move-up 2s;
-}
+form { animation: move-up 0.5s; }
 
 @keyframes move-up {
     from {

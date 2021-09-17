@@ -36,6 +36,12 @@ h3 {  // subtitle: "Full-Stack Software Developer"
     font-family: $title-font;
     font-weight: 500;
     font-size: 60px;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+        opacity: 65%;
+    }
 }
 
 h4 {  // links, view projects, back to top, aboutInfo, projectTItle
@@ -93,8 +99,7 @@ a {  // links, Project Title link, view source code link
     display: inline-block;
     &:hover {
         cursor: pointer;
-        // font-weight: 600;
-        text-decoration: line-through;
+        font-weight: 500;
     }
 }
 

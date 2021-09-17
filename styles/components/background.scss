@@ -24,10 +24,6 @@
 //~~~~~~~~~~ Home Page ~~~~~~~~~~~~~~~~~~~~~
 
 .bg-home-page-email-pattern {
-    // background:
-    //     linear-gradient(black, white 50%),
-    //     url(/email-pattern.png);
-    // background-blend-mode: screen;
     height: 120vh;
     margin-bottom: -20vh;
 }
@@ -41,6 +37,7 @@
 
 .rect-project-page-1 {  // top layer
     @include backgroundRectangle(colors.$bg-rect-project-page-1, -13.65deg);
+    z-index: 1;
 }
 
 .rect-project-page-2 {  // bottom layer
