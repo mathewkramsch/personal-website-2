@@ -19,6 +19,7 @@ export default function Contact() {
                 <div className='rect-contact-page-3'></div>
             </div>
             <div className={s.pageContent}>
+
                 <div className={s.leftContainer}>
                     <h2 id='contactme'>Send me an email -></h2>
                 </div>

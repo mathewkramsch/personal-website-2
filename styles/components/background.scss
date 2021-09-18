@@ -9,14 +9,13 @@
     height: 175vh;
     width: 180vw;
     margin-left: -50vw;
-    margin-top: 50vh;
 }
 
 @mixin rectangleContainer {
     overflow: clip;
     position: absolute;
     width: 99vw;
-    height: 265vh;
+    height: 295vh;
     margin: -50vh auto 0 0.4vh;
     z-index: 0;
 }
@@ -34,18 +33,21 @@
 .rect-container-project-page {
     @include rectangleContainer;
     z-index: 0;
+    margin-top: -80vh;
 }
 
 .rect-project-page-1 {  // top layer
     @include backgroundRectangle(colors.$bg-rect-project-page-1, -13.65deg);
     z-index: 2;
+    margin-top: 80vh;
 }
 
 .rect-project-page-2 {  // bottom layer
     @include backgroundRectangle(colors.$bg-rect-project-page-2, -22.7deg);
     z-index: 0;
-    height: 167vh;
-    margin-top: 57vh;
+    height: 174vh;
+    width: 200vw;
+    margin-top: 80vh;
 }
 
 //~~~~~~~~~~ Contact Page ~~~~~~~~~~~~~~~~~~
@@ -61,6 +63,7 @@
 .rect-contact-page-1 {  // top layer
     @include backgroundRectangle(colors.$bg-rect-contact-page-1, 49.52deg);
     margin-left: 8vw;
+    margin-top: 50vh;
 }
 
 .rect-contact-page-2 {  // bottom layer

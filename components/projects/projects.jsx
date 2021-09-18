@@ -9,12 +9,14 @@ export default function Projects(props) {
 		<div className={s.page}>
 			<div className='rect-container-project-page'>
 				<div className='rect-project-page-1'></div>
-				<div className='rect-project-page-2'></div>
+				<Parallax x={[15,-15]}>
+					<div className='rect-project-page-2'></div>
+				</Parallax>
 			</div>
 
 			<div className={s.pageContent}>
 	            <div className={s.leftContainer}>
-                	<h2>My personal projects</h2>
+	                	<h2>My personal projects</h2>
 	            </div>
 				<div className={s.rightContainer}>
 					<ProjectCards data={props.data}/>
