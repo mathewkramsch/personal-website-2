@@ -42,15 +42,16 @@
     margin-bottom: 40px;
 }
 
-.viewSrcCode {
+.websiteSrcCode {
     @include button;
     flex-direction: row;
     justify-content: flex-end;
     h4 {
         margin-left: -10px;
-        width: 268px;
+        width: 400px;
     }
-    width: 360px;
+    width: 380px;
+    margin-right: -15px;
 }
 
 .submitButton {

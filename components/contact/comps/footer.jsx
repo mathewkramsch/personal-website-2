@@ -37,9 +37,9 @@ export default class Footer extends React.Component {
                         <FontAwesomeIcon icon={faChevronCircleUp} className='icon' id='circleUp'/>
                     }
                 </div>
-                <a href='https://github.com/mathewkramsch/personal-website-2' className='viewSrcCode'>
+                <a href='https://github.com/mathewkramsch/personal-website-2' className='websiteSrcCode'>
                     <FontAwesomeIcon icon={faGithub} className='icon' id='githubContact'/>
-                    <h4 className='footerText'>view source code</h4>
+                    <h4 className='footerText'>website source code</h4>
                 </a>
             </div>
         );

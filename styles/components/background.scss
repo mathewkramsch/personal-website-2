@@ -33,16 +33,17 @@
 
 .rect-container-project-page {
     @include rectangleContainer;
+    z-index: 0;
 }
 
 .rect-project-page-1 {  // top layer
     @include backgroundRectangle(colors.$bg-rect-project-page-1, -13.65deg);
-    z-index: 1;
+    z-index: 2;
 }
 
 .rect-project-page-2 {  // bottom layer
     @include backgroundRectangle(colors.$bg-rect-project-page-2, -22.7deg);
-    z-index: -1;
+    z-index: 0;
     height: 167vh;
     margin-top: 57vh;
 }
@@ -58,20 +59,22 @@
 }
 
 .rect-contact-page-1 {  // top layer
-    @include backgroundRectangle(colors.$bg-rect-contact-page-1, 35.87deg);
-    margin-top: 130vh;
+    @include backgroundRectangle(colors.$bg-rect-contact-page-1, 49.52deg);
+    margin-left: 8vw;
 }
 
 .rect-contact-page-2 {  // bottom layer
     @include backgroundRectangle(colors.$bg-rect-contact-page-2, -13.65deg);
-    z-index: -1;
+    z-index: 1;
     height: 165vh;
+    width: 220vw;
     margin-top: 35vh;
+    overflow: clip;
 }
 
 .rect-contact-page-3 {  // bottom layer
     @include backgroundRectangle(colors.$bg-rect-contact-page-3, -18.17deg);
-    z-index: -2;
+    z-index: -1;
     height: 165vh;
     margin-top: 35vh;
 }

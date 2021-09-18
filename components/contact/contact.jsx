@@ -3,13 +3,19 @@
 import s from '../../styles/layout/contact.module.scss'
 import EmailInput from './comps/emailInput'
 import Footer from './comps/footer'
+import { Parallax } from 'react-scroll-parallax';
 
 export default function Contact() {
     return (
         <div className={s.page}>
             <div className='rect-container-contact-page'>
-                <div className='rect-contact-page-1'></div>
-                <div className='rect-contact-page-2'></div>
+                <Parallax x={[0,-40]}>
+                    <div className='rect-contact-page-2'>
+                        <Parallax x={[5,0]}>
+                            <div className='rect-contact-page-1'></div>
+                        </Parallax>
+                    </div>
+                </Parallax>
                 <div className='rect-contact-page-3'></div>
             </div>
             <div className={s.pageContent}>
