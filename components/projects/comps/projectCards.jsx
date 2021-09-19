@@ -11,7 +11,7 @@ export default class ProjectCards extends React.Component {
 
     render() {
         return (
-            <div className={s.projectCards} >
+            <div className={s.projectCards}>
                 {this.props.data.map(
                     (project)=>(
                         <Card key={project.title} projectData={project}/>

@@ -5,6 +5,7 @@ import s from '../../styles/layout/home.module.scss'
 import Links from './comps/links'
 import ScrollDown from './comps/scrollDown'
 import { Parallax } from 'react-scroll-parallax';
+import FadeIn from 'react-fade-in';
 
 const titles = [
 	'Full-Stack Software Developer',
@@ -49,16 +50,20 @@ export default function Home() {
 			<div></div>
 			<div className={s.topContainer}>
 				<div className={s.titleContainer}>
-					<h1><div id='firstName'>Mathew</div>&nbsp;Kramsch</h1>
+					<FadeIn><h1><div id='firstName'>Mathew</div>&nbsp;Kramsch</h1></FadeIn>
 				</div>
 				<div className={s.subHeader}>
 					<div className={s.subHeaderLeft}>
-						{ displayTitle(titleNum) }
-						<Links/>
+						<FadeIn>
+							{ displayTitle(titleNum) }
+							<Links/>
+						</FadeIn>
 					</div>
 					<div className={s.subHeaderRight}>
-						<h4 className='description' id={s.intro}>Hey what's up!</h4><br/>
-						{ displayAboutInfo(aboutInfoNum) }
+						<FadeIn>
+							<h4 className='description' id={s.intro}>Hey what's up!</h4><br/>
+							{ displayAboutInfo(aboutInfoNum) }
+						</FadeIn>
 					</div>
 				</div>
 			</div>
