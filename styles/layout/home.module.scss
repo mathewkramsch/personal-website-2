@@ -20,7 +20,9 @@
         .subHeader {
             display: inline-flex;
             justify-content: space-between;
+            width: 100%;
             .subHeaderLeft {
+                z-index: 1;
                 h3 {
                     margin: 0;
                     margin-bottom: 4.5vh;
@@ -38,6 +40,7 @@
                 z-index: 1;
                 h4 {}
                 #intro { margin-bottom: 25px; }
+                min-height: 220px;
             }
         }
     }

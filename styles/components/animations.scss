@@ -39,9 +39,6 @@
 form { animation: move-up 0.5s; }
 
 @keyframes move-up {
-    from {
-        margin-top: 100px;
-    } to {
-        margin-top: 0px;
-    }
+    from { margin-top: 100px; }
+    to { margin-top: 0px; }
 }
