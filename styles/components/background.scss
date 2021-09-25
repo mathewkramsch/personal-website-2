@@ -63,7 +63,7 @@
 
 .rect-contact-page-1 {  // top layer
     @include backgroundRectangle(colors.$bg-rect-contact-page-1, 49.52deg);
-    margin-top: 0vh;
+    margin-top: 10vh;
 }
 
 .rect-contact-page-2 {  // bottom layer
