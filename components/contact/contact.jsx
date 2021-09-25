@@ -9,13 +9,9 @@ export default function Contact() {
     return (
         <div className={s.page}>
             <div className='rect-container-contact-page'>
-                <Parallax x={[0,-40]}>
                     <div className='rect-contact-page-2'>
-                        <Parallax x={[5,0]}>
                             <div className='rect-contact-page-1'></div>
-                        </Parallax>
                     </div>
-                </Parallax>
                 <div className='rect-contact-page-3'></div>
             </div>
             <div className={s.pageContent}>

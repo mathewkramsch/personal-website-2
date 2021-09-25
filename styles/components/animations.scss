@@ -42,3 +42,38 @@ form { animation: move-up 0.5s; }
     from { margin-top: 100px; }
     to { margin-top: 0px; }
 }
+
+
+// onClick/cycle animations
+// .my-node-appear {
+//     opacity: 0 !important;
+//     color: green;
+//     // transition: all 300ms;
+// }
+// .my-node-appear-active {
+//     opacity: 0 !important;
+//     color: green;
+//     // transition: all 300ms;
+// }
+// .my-node-appear-done {
+//     opacity: 0 !important;
+//     color: green;
+//     // transition: all 300ms;
+// }
+// .my-node-enter {
+//     opacity: 0 !important;
+//     // transition: all 300ms;
+// }
+// .my-node-enter-active {
+//     opacity: 0 !important;
+//     // transition: all 300ms;
+// }
+// .my-node-exit {
+//     opacity: 0 !important;
+//     // transition: all 300ms;
+//
+// }
+// .my-node-exit-active {
+//     opacity: 0 !important;
+//     // transition: all 300ms;
+// }

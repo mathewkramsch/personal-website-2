@@ -22,8 +22,14 @@ input {
     @include input;
     font-family: inherit;
 }
-#name { width: 50%; }
-#email { width: 100%; }
+#name {
+    width: 50%;
+    box-shadow: 0px 0px 0px 20px colors.$bg-rect-contact-page-2;
+}
+#email {
+    width: 100%;
+    box-shadow: 0px 0px 0px 20px colors.$bg-rect-contact-page-2;
+}
 
 textarea {
     @include input;

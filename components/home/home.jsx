@@ -1,11 +1,12 @@
 // home.jsx
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import s from '../../styles/layout/home.module.scss'
 import Links from './comps/links'
 import ScrollDown from './comps/scrollDown'
 import { Parallax } from 'react-scroll-parallax';
 import FadeIn from 'react-fade-in';
+import { CSSTransition } from "react-transition-group";
 
 const titles = [
 	'Full-Stack Software Developer',
@@ -15,13 +16,11 @@ const titles = [
 	'Web Developer',
 	'Programmer',
 	'Wanna-be Hacker',
-	'Cool Person',
-	'Hireable Candidate',
-	'Your next employee',
+	'Cool Person'
 ];
 
 const aboutInfoList = [
-	`I’m a diligent fifth year Computer Science student at UC Santa Barbara who is currently looking for software development engineering opportunities. View more info >`,
+	`I’m a diligent fifth year Computer Science student at UC Santa Barbara who is currently looking for software development engineering opportunities.`,
 	`With a strong technical knowledge of data structures, CS fundamentals, and multiple programming languages and technologies, I can operate as a Full-Stack software developer.`,
 	`Coming from an artistic background, I love UI/UX design but am also a capable back-end programmer.`,
 	`Scroll to the bottom to send me an email or view the source code for this website, which was built using React, Next.js, and SASS.`,
@@ -31,7 +30,12 @@ const aboutInfoList = [
 export default function Home() {
 	const [titleNum, setTitleNum] = useState(0);
 	const [aboutInfoNum, setAboutInfoNum] = useState(0);
-	const toggleTitle = ()=>{ setTitleNum(titleNum+1); }
+	const [inProp, setInProp] = useState(false);
+	const toggleTitle = ()=>{
+		setTitleNum(titleNum+1);
+		setInProp(true);
+		setTimeout(()=>{ setInProp(false); }, 300);
+	}
 	const toggleAboutInfo = ()=>{ setAboutInfoNum(aboutInfoNum+1); }
 	const displayTitle = (titleNum)=>{
 		const numberOfTitles = titles.length;
@@ -43,6 +47,19 @@ export default function Home() {
 		const aboutInfo = aboutInfoList[aboutInfoNum%numberOfAboutInfos];
 		return <h4 className='description aboutInfo' onClick={toggleAboutInfo}>{aboutInfo}</h4>
 	}
+	const delay = 5000;
+
+	useEffect(()=>{
+		const titleTimeout = setTimeout(toggleTitle, delay);
+		return ()=>clearTimeout(titleTimeout);
+	}, [titleNum]);
+
+	useEffect(()=>{
+		let thisDelay = delay;
+		if (titleNum===0) thisDelay += delay/2;
+		const aboutTimeout = setTimeout(toggleAboutInfo, thisDelay);
+		return ()=>clearTimeout(aboutTimeout);
+	}, [aboutInfoNum]);
 
 	return (
 		<div className='bg-home-page-email-pattern'>
@@ -55,8 +72,13 @@ export default function Home() {
 				<div className={s.subHeader}>
 					<div className={s.subHeaderLeft}>
 						<FadeIn>
-							{ displayTitle(titleNum) }
+							<CSSTransition
+							in={inProp} appear={inProp}
+							timeout={300} classNames='my-node'>
+								{ displayTitle(titleNum) }
+							</CSSTransition>
 							<Links/>
+
 						</FadeIn>
 					</div>
 					<div className={s.subHeaderRight}>
@@ -74,3 +96,8 @@ export default function Home() {
 		</div>
 	);
 }
+
+// 
+// <p>{titleNum}</p>
+// <p>{aboutInfoNum}</p>
+// <p>inProp=={ inProp ? 'true':'false' }</p>

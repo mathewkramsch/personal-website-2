@@ -9,9 +9,7 @@ export default function Projects(props) {
 		<div className={s.page}>
 			<div className='rect-container-project-page'>
 				<div className='rect-project-page-1'></div>
-				<Parallax x={[15,-15]}>
 					<div className='rect-project-page-2'></div>
-				</Parallax>
 			</div>
 
 			<div className={s.pageContent}>
