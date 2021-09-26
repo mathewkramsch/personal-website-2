@@ -83,7 +83,7 @@ export default function Home() {
 					</div>
 					<div className={s.subHeaderRight}>
 						<FadeIn>
-							<h4 className='description' id={s.intro}>Hey what's up!</h4><br/>
+							<h4 className='description' id={s.intro}>Hey what's up!</h4>
 							{ displayAboutInfo(aboutInfoNum) }
 						</FadeIn>
 					</div>
@@ -97,7 +97,7 @@ export default function Home() {
 	);
 }
 
-// 
+//
 // <p>{titleNum}</p>
 // <p>{aboutInfoNum}</p>
 // <p>inProp=={ inProp ? 'true':'false' }</p>

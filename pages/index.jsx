@@ -10,7 +10,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 
 export default function Index() {
 	return (
-		<ParallaxProvider>
+		<ParallaxProvider className='shitcontainer'>
 			<Home/>
 			<Projects data={projectsList}/>
 			<ProgLang data={progLangList}/>

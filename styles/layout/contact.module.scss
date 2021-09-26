@@ -1,12 +1,14 @@
 // contact.scss
 
-// @use '../../styles';
+@use '../components/colors';
 
 .page {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: colors.$bg-contact-page-1;
+    width: 100%;
 }
 
 .pageContent {

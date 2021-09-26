@@ -1,6 +1,10 @@
 // projects.scss
 
-.page {}
+@use '../components/colors';
+
+.page {
+    background-color: colors.$bg-project-page-1;
+}
 
 .pageContent {
     display: flex;
