@@ -8,6 +8,13 @@
 .progLangCard-focus { animation: move-left 0.3s; }
 .extendedLangCard { animation: open 0.3s; }
 
+@media (max-width: 1600px) {
+    .projectCard { animation: none !important; }
+    .projectCard-focus { animation: none !important; }
+    .progLangCard { animation: close 0.3s; }
+    .progLangCard-focus { animation: none !important; }
+}
+
 @keyframes move-left {
     from {
         margin-left: 0;

@@ -29,3 +29,14 @@
 .progLangObjects {
     padding-left: 80px;
 }
+
+
+@media (max-width: 1600px) {
+    .pageContent { flex-direction: column; }
+    .leftContainer {
+        margin-bottom: 0vh;
+        text-align: center;
+        width: 70%;
+    }
+    .rightContainer { width: 80%; }
+}

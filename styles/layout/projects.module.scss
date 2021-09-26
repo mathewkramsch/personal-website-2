@@ -33,3 +33,26 @@
     margin-top: 36vh;
     margin-bottom: 36vh;
 }
+
+
+@media (max-width: 1600px) {
+    .pageContent {
+        flex-direction: column;
+    }
+
+    .leftContainer {
+        position: relative;
+        height: auto;
+        margin-top: 5vh;
+        text-align: center;
+    }
+
+    .rightContainer {
+        margin: auto
+    }
+
+    .projectCards {
+        margin-top: 10vh;
+        margin-bottom: 15vh;
+    }
+}

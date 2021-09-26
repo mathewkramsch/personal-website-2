@@ -53,3 +53,24 @@
 }
 
 /*-----------------------------------------*/
+
+@media (max-width: 1600px) {
+    .subHeader {
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+        .subHeaderLeft {
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            width: 100% !important;
+            max-width: 100% !important;
+            // h3 { align-text: center; margin: auto;}
+        }
+        .subHeaderRight {
+            margin-top: 6vh;
+            text-align: left !important;
+            width: 100% !important;
+        }
+    }
+}

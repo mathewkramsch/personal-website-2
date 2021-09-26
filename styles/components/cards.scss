@@ -32,7 +32,6 @@
     @include focus(colors.$bg-card-project-page);
     margin-left: -40px;
     margin-right: 40px;
-    a { img { filter: blur(0); }}
 }
 
 .cardImage {
@@ -76,6 +75,13 @@
     bottom: 50%;
     transform: translate(-50%, 50%);
     color: colors.$fg-card-open-project;
+}
+
+@media (max-width: 1600px) {
+    .projectCard-focus {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
 }
 
 //~~~~~~~~~~~ Programming Language Cards ~~~~~~~~~~~~~
@@ -154,3 +160,15 @@
 }
 
 .langDescription {}
+
+@media (max-width: 1600px) {
+    .skillLevelOutline {
+        width: 40vw;
+        margin-left: 5vw;
+    }
+    .langText { margin-left: 6vw; }
+    .progLangCard-focus {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
