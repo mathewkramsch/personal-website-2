@@ -32,6 +32,7 @@
     @include focus(colors.$bg-card-project-page);
     margin-left: -40px;
     margin-right: 40px;
+    box-shadow: 0px 0px 0px 2px colors.$grey-500;
 }
 
 .cardImage {
@@ -162,8 +163,15 @@
 .langDescription {}
 
 @media (max-width: 1600px) {
+    .collapsedLangCard {
+        height: 9vh;
+        justify-content: space-between;
+    }
+    .language {
+        margin-left: 2vw;
+    }
     .skillLevelOutline {
-        width: 40vw;
+        // width: 40vw;  // cant change this yet bc hardcoded at 30vw
         margin-left: 5vw;
     }
     .langText { margin-left: 6vw; }

@@ -6,17 +6,13 @@ import Links from './comps/links'
 import ScrollDown from './comps/scrollDown'
 import { Parallax } from 'react-scroll-parallax';
 import FadeIn from 'react-fade-in';
-import { CSSTransition } from "react-transition-group";
 
 const titles = [
 	'Full-Stack Software Developer',
 	'5th Year UCSB Student',
 	'Computer Science Major',
 	'Software Engineer',
-	'Web Developer',
-	'Programmer',
-	'Wanna-be Hacker',
-	'Cool Person'
+	'Web Developer'
 ];
 
 const aboutInfoList = [
@@ -24,19 +20,16 @@ const aboutInfoList = [
 	`With a strong technical knowledge of data structures, CS fundamentals, and multiple programming languages and technologies, I can operate as a Full-Stack software developer.`,
 	`Coming from an artistic background, I love UI/UX design but am also a capable back-end programmer.`,
 	`Scroll to the bottom to send me an email or view the source code for this website, which was built using React, Next.js, and SASS.`,
-	`Also check out my resume!`
+	`Check out my resume!`
 ]
 
 export default function Home() {
 	const [titleNum, setTitleNum] = useState(0);
 	const [aboutInfoNum, setAboutInfoNum] = useState(0);
-	const [inProp, setInProp] = useState(false);
-	const toggleTitle = ()=>{
-		setTitleNum(titleNum+1);
-		setInProp(true);
-		setTimeout(()=>{ setInProp(false); }, 300);
-	}
-	const toggleAboutInfo = ()=>{ setAboutInfoNum(aboutInfoNum+1); }
+
+	const toggleTitle = ()=>setTitleNum(titleNum+1);
+	const toggleAboutInfo = ()=>setAboutInfoNum(aboutInfoNum+1);
+
 	const displayTitle = (titleNum)=>{
 		const numberOfTitles = titles.length;
 		const title = titles[titleNum%numberOfTitles];
@@ -47,17 +40,10 @@ export default function Home() {
 		const aboutInfo = aboutInfoList[aboutInfoNum%numberOfAboutInfos];
 		return <h4 className='description aboutInfo' onClick={toggleAboutInfo}>{aboutInfo}</h4>
 	}
-	const delay = 5000;
 
+	const delay = 7000;
 	useEffect(()=>{
-		const titleTimeout = setTimeout(toggleTitle, delay);
-		return ()=>clearTimeout(titleTimeout);
-	}, [titleNum]);
-
-	useEffect(()=>{
-		let thisDelay = delay;
-		if (titleNum===0) thisDelay += delay/2;
-		const aboutTimeout = setTimeout(toggleAboutInfo, thisDelay);
+		const aboutTimeout = setTimeout(toggleAboutInfo, delay);
 		return ()=>clearTimeout(aboutTimeout);
 	}, [aboutInfoNum]);
 
@@ -72,13 +58,8 @@ export default function Home() {
 				<div className={s.subHeader}>
 					<div className={s.subHeaderLeft}>
 						<FadeIn>
-							<CSSTransition
-							in={inProp} appear={inProp}
-							timeout={300} classNames='my-node'>
-								{ displayTitle(titleNum) }
-							</CSSTransition>
+							{ displayTitle(titleNum) }
 							<Links/>
-
 						</FadeIn>
 					</div>
 					<div className={s.subHeaderRight}>
@@ -96,8 +77,3 @@ export default function Home() {
 		</div>
 	);
 }
-
-//
-// <p>{titleNum}</p>
-// <p>{aboutInfoNum}</p>
-// <p>inProp=={ inProp ? 'true':'false' }</p>

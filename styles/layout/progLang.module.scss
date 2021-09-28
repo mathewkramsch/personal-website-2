@@ -32,8 +32,15 @@
 
 
 @media (max-width: 1600px) {
-    .pageContent { flex-direction: column; }
+    .page {
+        margin-bottom: 5vh;
+    }
+    .pageContent {
+        flex-direction: column;
+        margin-top: 0;
+    }
     .leftContainer {
+        margin-top: 0vh;
         margin-bottom: 0vh;
         text-align: center;
         width: 70%;
