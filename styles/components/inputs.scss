@@ -34,3 +34,7 @@ textarea {
     width: 100%;
     resize: none;
 }
+
+@media (max-width: 1600px) {
+    #name { width: 100%; }
+}
