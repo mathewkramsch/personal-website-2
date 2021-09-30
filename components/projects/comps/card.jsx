@@ -2,6 +2,8 @@
 
 import React from 'react'
 import s from '../../../styles/layout/projects.module.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 
 export default class Card extends React.Component {
     constructor(props) {
@@ -55,7 +57,10 @@ export default class Card extends React.Component {
                 </div>
                 <div className='cardInfo'>
                     <a href={this.props.projectData.link}>
-                        <h4 id='projectTitle'>{this.props.projectData.title}</h4>
+                        <h4 id='projectTitle'>
+                            {this.props.projectData.title} &nbsp;
+                            <FontAwesomeIcon icon={faExternalLinkAlt} id='externalLink'/>
+                        </h4>
                     </a>
                     <p>{this.props.projectData.description}
                         <a href={this.props.projectData.srcCodeLink} className='srcCodeLink'>

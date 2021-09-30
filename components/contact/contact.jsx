@@ -3,8 +3,6 @@
 import s from '../../styles/layout/contact.module.scss'
 import EmailInput from './comps/emailInput'
 import Footer from './comps/footer'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
 
 export default function Contact() {
     return (
