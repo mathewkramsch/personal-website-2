@@ -26,21 +26,25 @@ export default class Footer extends React.Component {
     render() {
         return (
             <div className={s.footer}>
-                <h4 className='footerText'>
-                    <div id='copyRight'>&copy;</div>2021 Mathew Kramsch
-                </h4>
-                <div className='backToTop' onClick={scrollToTop}
-                    onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
-                    <h4 className='italic footerText'>back to top</h4>
-                    { !this.state.isHovered ?
-                        <FontAwesomeIcon icon={faChevronUp} className='icon' id='up'/> :
-                        <FontAwesomeIcon icon={faChevronCircleUp} className='icon' id='circleUp'/>
-                    }
+                <div className={s.topFooter}>
+                    <div className='backToTop' onClick={scrollToTop}
+                        onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>
+                        <h4 className='italic footerText'>back to top</h4>
+                        { !this.state.isHovered ?
+                            <FontAwesomeIcon icon={faChevronUp} className='icon' id='up'/> :
+                            <FontAwesomeIcon icon={faChevronCircleUp} className='icon' id='circleUp'/>
+                        }
+                    </div>
                 </div>
-                <a href='https://github.com/mathewkramsch/personal-website-2' className='websiteSrcCode'>
-                    <FontAwesomeIcon icon={faGithub} className='icon' id='githubContact'/>
-                    <h4 className='footerText'>website source code</h4>
-                </a>
+                <div className={s.bottomFooter}>
+                    <h4 className='footerText'>
+                        <div id='copyRight'>&copy;</div>2021 Mathew Kramsch
+                    </h4>
+                    <a href='https://github.com/mathewkramsch/personal-website-2' className='websiteSrcCode'>
+                        <FontAwesomeIcon icon={faGithub} className='icon' id='githubContact'/>
+                        <h4 className='footerText'>website source code</h4>
+                    </a>
+                </div>
             </div>
         );
     }

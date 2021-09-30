@@ -104,3 +104,7 @@ input[type=submit] {
     }
     #plane { opacity: 0; }
 }
+
+@media (max-width: 500px) {
+    .linkButton { margin: 1vh; }
+}

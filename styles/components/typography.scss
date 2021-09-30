@@ -24,6 +24,7 @@ h1 {  // title: "Mathew Kramsch"
     background: linear-gradient(90deg, colors.$fg-accent-main, colors.$mint-green-300);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-right: 40px;
 }
 
 h2 {  // page-title: "projects", "contact me"
@@ -147,4 +148,19 @@ a {  // links, Project Title link, view source code link
 
 
 @media (max-width: 1600px) {
+}
+
+@media (max-width: 1440px) {
+    h1 { font-size: 120px; }
+    h2 { font-size: 60px; }
+}
+
+@media (max-width: 1024px) {
+    h1 { flex-direction: column; }
+}
+
+@media (max-width: 500px) {
+    h1 { font-size: 80px; }
+    h3 { font-size: 50px; }
+    h2 { font-size: 50px; }
 }

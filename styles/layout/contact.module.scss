@@ -52,12 +52,19 @@
 
 .footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     width: 95vw;
     margin: 0 auto 30px auto;
     z-index: 1;
+}
+.topFooter {}
+.bottomFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .inputContent {
@@ -123,7 +130,12 @@
     .footer {
         width: 80%;
         margin: 0 auto 5vh auto;
-        // background-color: #111;
-        // flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .bottomFooter {
+        flex-direction: column;
+        align-items: center;
     }
 }
