@@ -26,19 +26,33 @@ const aboutInfoList = [
 export default function Home() {
 	const [titleNum, setTitleNum] = useState(0);
 	const [aboutInfoNum, setAboutInfoNum] = useState(0);
+	const [newMount, setNewMount] = useState(false);  // new mount of title
+	const [newMount2, setNewMount2] = useState(false);  // new mount of about
 
-	const toggleTitle = ()=>setTitleNum(titleNum+1);
-	const toggleAboutInfo = ()=>setAboutInfoNum(aboutInfoNum+1);
+	const toggleTitle = ()=>{
+		setNewMount(true);
+		setTitleNum(titleNum+1);
+		const timeoutId = setTimeout(()=>setNewMount(false), 600);
+		return ()=>clearTimeout(timeoutId);
+	}
+	const toggleAboutInfo = ()=>{
+		setNewMount2(true);
+		setAboutInfoNum(aboutInfoNum+1);
+		const timeoutId = setTimeout(()=>setNewMount2(false), 600);
+		return ()=>clearTimeout(timeoutId);
+	}
 
 	const displayTitle = (titleNum)=>{
 		const numberOfTitles = titles.length;
 		const title = titles[titleNum%numberOfTitles];
-		return <h3 onClick={toggleTitle}>{title}</h3>
+		return <h3 onClick={toggleTitle} className={newMount && 'onMountStyle'}>{title}</h3>;
 	}
 	const displayAboutInfo = (aboutInfoNum)=>{
 		const numberOfAboutInfos = aboutInfoList.length;
 		const aboutInfo = aboutInfoList[aboutInfoNum%numberOfAboutInfos];
-		return <h4 className='description aboutInfo' onClick={toggleAboutInfo}>{aboutInfo}</h4>
+		let classNames = 'description aboutInfo';
+		if (newMount2) classNames = classNames.concat(' onMountStyle');
+		return <h4 className={classNames} onClick={toggleAboutInfo}>{aboutInfo}</h4>
 	}
 
 	const delay = 7000;
@@ -48,32 +62,34 @@ export default function Home() {
 	}, [aboutInfoNum]);
 
 	return (
-		<div className='bg-home-page-email-pattern'>
 		<div className={s.page}>
-			<div></div>
-			<div className={s.topContainer}>
-				<div className={s.titleContainer}>
-					<FadeIn><h1><div id='firstName'>Mathew</div>&nbsp;Kramsch</h1></FadeIn>
+			<div className={s.pageContent}>
+				<div></div>
+				<div className={s.topContainer}>
+					<div className={s.titleContainer}>
+						<FadeIn><h1><div id='firstName'>Mathew</div>&nbsp;Kramsch</h1></FadeIn>
+					</div>
+					<div className={s.subHeader}>
+						<div className={s.subHeaderLeft}>
+							<FadeIn>
+								{ displayTitle(titleNum) }
+								<Links/>
+							</FadeIn>
+						</div>
+						<div className={s.subHeaderRight}>
+							<FadeIn>
+								<h4 className='description' id={s.intro}>Hey what's up!</h4>
+								{ displayAboutInfo(aboutInfoNum) }
+							</FadeIn>
+						</div>
+					</div>
 				</div>
-				<div className={s.subHeader}>
-					<div className={s.subHeaderLeft}>
-						<FadeIn>
-							{ displayTitle(titleNum) }
-							<Links/>
-						</FadeIn>
-					</div>
-					<div className={s.subHeaderRight}>
-						<FadeIn>
-							<h4 className='description' id={s.intro}>Hey what's up!</h4>
-							{ displayAboutInfo(aboutInfoNum) }
-						</FadeIn>
-					</div>
+				<div className={s.bottomContainer}>
+					<img src='/illustrations/coding.svg'/>
+					<div className={s.scrollDownButton}><ScrollDown/></div>
+					<div className={s.dummy}></div>
 				</div>
 			</div>
-			<div className={s.bottomContainer}>
-				<ScrollDown/>
-			</div>
-		</div>
 		</div>
 	);
 }

@@ -1,62 +1,93 @@
 // home.scss
 
 .page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // padding-bottom: 5vh;
+}
+
+.pageContent {
+    width: 83vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
-    width: 89vw;
-    margin: auto;
+}
 
-    .topContainer {
-        margin-top: -3vh;
-        .titleContainer {
-            h1 {
-                margin: 0;
-                margin-bottom: 2vh;
-            }
-        }
-        .subHeader {
-            display: inline-flex;
-            justify-content: space-between;
-            width: 100%;
-            .subHeaderLeft {
-                h3 {
-                    margin: 0;
-                    margin-bottom: 4.5vh;
-                }
-                .links {
-                    display: inline-flex;
-                    align-items: center;
-                }
-                max-width: 900px;
-                min-width: 570px;
-            }
-            .subHeaderRight {
-                text-align: right;
-                width: 45%;
-                h4 {}
-                #intro { margin-bottom: 25px; }
-                min-height: 230px;
-            }
+.topContainer {
+    // border-style: solid;
+    z-index: 1;
+
+    .titleContainer {
+        h1 {
+            margin: 0;
+            margin-bottom: 2vh;
         }
     }
-
-    .bottomContainer {
-        margin-bottom: 15vh;
+    .subHeader {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        .subHeaderLeft {
+            h3 {
+                margin: 0;
+                margin-bottom: 4.5vh;
+            }
+            .links {
+                display: inline-flex;
+                align-items: center;
+            }
+            max-width: 900px;
+            min-width: 570px;
+        }
+        .subHeaderRight {
+            align-self: flex-end;
+            text-align: right;
+            width: 45%;
+            h4 {}
+            #intro { margin-bottom: 25px; }
+            min-height: 230px;
+        }
     }
+}
+
+.bottomContainer {
+    // border-style: solid;
+    margin-top: -10vh;
+    // margin-bottom: 12vh;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    img { width: 30vw; }
+    .scrollDownButton {}
+    .dummy { width: 30vw; }
+}
+
+.page::before {
+    content: "";
+    background-image:
+        linear-gradient(transparent, white 80%),
+        url('/business2.svg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.06;
 }
 
 /*-----------------------------------------*/
 
 @media (max-width: 1600px) {
     .page {
-        width: 82vw;
+        padding: 0 6vw;
     }
     .topContainer {
-        padding-top: 15vh;
+        padding-top: 10vh;
     }
     .subHeader {
         flex-direction: column;
@@ -70,6 +101,12 @@
             margin-top: 6vh;
             text-align: left !important;
             width: 100% !important;
+        }
+    }
+    .bottomContainer {
+        img {
+            opacity: 0;
+            height: 10vh;
         }
     }
 }
