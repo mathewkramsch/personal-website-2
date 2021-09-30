@@ -20,17 +20,19 @@ const sendEmailButton = (message)=>{
 }
 
 const requiredFieldError = (fieldRequiredX)=>{
-    return <FontAwesomeIcon icon={faTimes} className='icon'
-        id={ fieldRequiredX? 'X' : 'XPlaceHolder' }/>;
+    let classList = 'X icon';
+    if (!fieldRequiredX) classList = 'X icon placeHolder';
+    return <FontAwesomeIcon icon={faTimes} className={classList}/>;
 }
 
 const requiredFieldMessage = (nameX, emailX, messageX)=>{
-    if (nameX || emailX || messageX) // if any of these fields have an 'X'
-        return (
-            <div className={s.errorMssg}>
-                <h4 className='errorMssgText'>please fill out required fields</h4>
-            </div>
-        );
+    let classList = 'errorMssgText';
+    if (!nameX && !emailX & !messageX) classList = 'errorMssgText placeHolder'
+    return (
+        <div className={s.errorMssg}>
+            <h4 className={classList}>please fill out required fields</h4>
+        </div>
+    );
 }
 
 export default function EmailInput() {
@@ -61,7 +63,7 @@ export default function EmailInput() {
     }
 
     return (
-        <>
+        <div className={s.inputContent}>
             <form action='#' className={s.inputs} onSubmit={sendEmail}>
                 <div className={s.textInputs}>
                     <div className={s.inputBox}>
@@ -86,6 +88,6 @@ export default function EmailInput() {
                 </div>
             </form>
             { requiredFieldMessage(nameRequiredX, emailRequiredX, messageRequiredX) }
-        </>
+        </div>
     );
 }

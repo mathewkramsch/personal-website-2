@@ -80,10 +80,27 @@ input[type=submit] {
 }
 
 @media (max-width: 1600px) {
+    .submitButton {
+        margin: 2vh 0;
+    }
+    .sendEmail {
+        &:hover {
+            input { color: colors.$fg-text-contact-page; }
+        }
+    }
     input[type=submit] {
-        background: #111;
+        background: linear-gradient(to right,
+            colors.$pink 0%, colors.$pink-purple 51%, colors.$purple 100%);
+        color: colors.$bg-contact-page-1 !important;
         padding: 10px;
         padding-left: 8px;
+        background-size: 200% auto;
+        box-shadow: 0 0 20px #111;
+        border-radius: 20px;
+        &:hover {
+            background-position: right center;
+            transition: all .4s ease-in-out;
+        }
     }
     #plane { opacity: 0; }
 }

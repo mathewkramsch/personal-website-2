@@ -60,6 +60,12 @@
     z-index: 1;
 }
 
+.inputContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .inputs {
     display: flex;
     flex-direction: row;
@@ -99,11 +105,15 @@
         width: 80%;
         margin-top: 0;
     }
+
     .inputs {
         flex-direction: column;
+        justify-content: flex-start;
     }
     .textInputs {
         width: 100%;
+    }
+    .inputBox {
     }
     .errorMssg {
         text-align: center;
