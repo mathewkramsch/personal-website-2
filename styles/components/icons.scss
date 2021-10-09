@@ -68,3 +68,10 @@
 } .placeHolder {
     color: transparent !important;
 }
+
+@media (max-width: 1250px) {
+    .linkIcons { font-size: 60px; }
+}
+@media (max-width: 850px) {
+    .linkIcons { font-size: 55px; }
+}

@@ -64,7 +64,6 @@ export default function Home() {
 	return (
 		<div className={s.page}>
 			<div className={s.pageContent}>
-				<div></div>
 				<div className={s.topContainer}>
 					<div className={s.titleContainer}>
 						<FadeIn><h1><div id='firstName'>Mathew</div>Kramsch</h1></FadeIn>
@@ -76,13 +75,13 @@ export default function Home() {
 								<Links/>
 							</FadeIn>
 						</div>
-						<div className={s.subHeaderRight}>
-							<FadeIn>
-								<h4 className='description' id={s.intro}>Hey what's up!</h4>
-								{ displayAboutInfo(aboutInfoNum) }
-							</FadeIn>
-						</div>
 					</div>
+				</div>
+				<div className={s.subHeaderRight}>
+					<FadeIn>
+						<h4 className='description' id={s.intro}>Hey what's up!</h4>
+						{ displayAboutInfo(aboutInfoNum) }
+					</FadeIn>
 				</div>
 				<div className={s.bottomContainer}>
 					<img src='/illustrations/coding.svg'/>

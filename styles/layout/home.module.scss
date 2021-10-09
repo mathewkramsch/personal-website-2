@@ -10,6 +10,7 @@
 
 .pageContent {
     width: 83vw;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,39 +18,40 @@
 
 .topContainer {
     z-index: 1;
+}
 
-    .titleContainer {
-        h1 {
-            margin: 0;
-            margin-bottom: 2vh;
-        }
+.titleContainer {
+    h1 {
+        margin: 0;
+        margin-bottom: 2vh;
     }
-    .subHeader {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        .subHeaderLeft {
-            h3 {
-                margin: 0;
-                margin-bottom: 4.5vh;
-            }
-            .links {
-                display: inline-flex;
-                align-items: center;
-            }
-            max-width: 900px;
-            min-width: 570px;
-        }
-        .subHeaderRight {
-            align-self: flex-end;
-            text-align: right;
-            width: 45%;
-            h4 {}
-            #intro { margin-bottom: 25px; }
-            min-height: 230px;
-        }
+}
+.subHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.subHeaderLeft {
+    h3 {
+        margin: 0;
+        margin-bottom: 4.5vh;
     }
+    .links {
+        display: inline-flex;
+        align-items: center;
+    }
+    max-width: 900px;
+    min-width: 570px;
+}
+
+.subHeaderRight {
+    z-index: 1;
+    align-self: flex-end;
+    text-align: right;
+    width: 45%;
+    #intro { margin-bottom: 25px; }
+    min-height: 230px;
 }
 
 .bottomContainer {
@@ -82,22 +84,10 @@
     .page {
         padding: 0 6vw;
     }
-    .topContainer {
-        padding-top: 10vh;
-    }
-    .subHeader {
-        flex-direction: column;
-        margin: auto;
-        width: 80%;
-        .subHeaderLeft {
-            // width: 100% !important;
-            // max-width: 100% !important;
-        }
-        .subHeaderRight {
-            margin-top: 6vh;
-            text-align: left !important;
-            width: 100% !important;
-        }
+    .subHeaderRight {
+        margin-top: 6vh;
+        text-align: left !important;
+        width: 100% !important;
     }
     .bottomContainer {
         img {
