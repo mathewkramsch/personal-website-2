@@ -46,11 +46,10 @@
         text-align: center;
         width: 70%;
     }
-    .rightContainer { width: 80%; }
+    .rightContainer { width: 80%; height: auto; margin-bottom: 10vh; }
     .progLangObjects { padding-left: 0; }
 }
 
-@media (max-width: 850px) {
-    .rightContainer { margin-bottom: 0; }
-    .page { margin-bottom: 0; }
+@media (max-width: 480px) {
+    .rightContainer { width: 95%; }
 }

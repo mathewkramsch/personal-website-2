@@ -107,9 +107,25 @@ input[type=submit] {
 }
 @media (max-width: 1250px) {
     .scrollDown { h4 { margin-bottom: 7px; }}
+    .backToTop { display: none; }
+    input[type=submit] { width: auto; padding: 10px 20px; }
+}
+@media (max-width: 900px) {
+    .websiteSrcCode {
+        #githubContact { display: none; }
+        h4 {
+            margin-left: 0px;
+            width: auto !important;
+            color: colors.$black-300;
+        }
+        width: auto !important;
+        margin-right: 0px;
+        margin-top: 10px;
+    }
 }
 @media (max-width: 850px) {
-    .scrollDown { h4 { display: none; } }
+    .scrollDown { h4 { display: none; }}
+    input[type=submit] {}
 }
 @media (max-width: 730px) {
     .linkButton {
@@ -118,10 +134,5 @@ input[type=submit] {
         margin-right: 8vw;
     }
 }
-@media (max-width: 550px) {
-    .linkButton { margin-right: 12vw; }
-}
-
-@media (max-width: 350px) {
-    .linkButton { margin-right: 20vw; }
-}
+@media (max-width: 550px) { .linkButton { margin-right: 12vw; }}
+@media (max-width: 350px) { .linkButton { margin-right: 20vw; }}

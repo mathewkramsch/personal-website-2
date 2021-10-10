@@ -98,8 +98,9 @@
 }
 
 @media (max-width: 1600px) {
-    .page {}
+    .page { height: auto; }
     .pageContent {
+        margin-top: 5vh;
         flex-direction: column;
         align-items: center;
     }
@@ -129,13 +130,17 @@
 
     .footer {
         width: 80%;
-        margin: 0 auto 5vh auto;
+        margin: 10vh auto 5vh auto;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    .pageContent { width: 90vw; }
     .bottomFooter {
         flex-direction: column;
         align-items: center;
     }
+    .footer { margin-top: 30px; }
+    .leftContainer { width: 100%; }
+    .rightContainer { width: 100%; }
 }

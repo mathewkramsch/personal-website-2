@@ -98,6 +98,8 @@
 }
 
 @media (max-width: 730px) {
+    .page { height: auto; }
+    .pageContent { height: auto; padding: 8vh 0; }
     .subHeaderLeft {
         min-width: 0px !important;
         max-width: 730px !important;
