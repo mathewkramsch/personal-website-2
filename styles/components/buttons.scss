@@ -103,9 +103,25 @@ input[type=submit] {
             transition: all .4s ease-in-out;
         }
     }
-    #plane { opacity: 0; }
+    #plane { display: none; }  // was opacity: 0 before
+}
+@media (max-width: 1250px) {
+    .scrollDown { h4 { margin-bottom: 7px; }}
+}
+@media (max-width: 850px) {
+    .scrollDown { h4 { display: none; } }
+}
+@media (max-width: 730px) {
+    .linkButton {
+        h4 { display: none; }
+        width: 100%;
+        margin-right: 8vw;
+    }
+}
+@media (max-width: 550px) {
+    .linkButton { margin-right: 12vw; }
 }
 
-@media (max-width: 500px) {
-    .linkButton { margin: 1vh; }
+@media (max-width: 350px) {
+    .linkButton { margin-right: 20vw; }
 }

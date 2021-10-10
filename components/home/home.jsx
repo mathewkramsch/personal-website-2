@@ -66,7 +66,10 @@ export default function Home() {
 			<div className={s.pageContent}>
 				<div className={s.topContainer}>
 					<div className={s.titleContainer}>
-						<FadeIn><h1><div id='firstName'>Mathew</div>Kramsch</h1></FadeIn>
+						<FadeIn><h1>
+							<div id='firstName'>Mathew</div>
+							<div id='lastName'>Kramsch</div>
+						</h1></FadeIn>
 					</div>
 					<div className={s.subHeader}>
 						<div className={s.subHeaderLeft}>

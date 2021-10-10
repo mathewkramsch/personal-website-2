@@ -6,7 +6,7 @@ export default function extendedLangCard(props) {
     return (
         <div className='extendedLangCard'>
             <div className='proficiencyIndicator'>
-                <p className='proficiency'>{ props.langData.skillLevel }/5 Proficiency</p>
+                <p id='proficiency'>{ props.langData.skillLevel }/5 Proficiency</p>
             </div>
             <div className='langDescription'>
                 <p>{ props.langData.langDescription }</p>

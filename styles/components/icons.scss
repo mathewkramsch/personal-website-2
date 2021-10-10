@@ -19,22 +19,12 @@
 
 //~~~~~~~~~ Programming Languages Page Icons ~~~~~~~~~~~~
 
-
-#c {
-    width: 65px;
-    margin-left: -7px;
-} #java {
-    width: 45px;
-} #python {
-
-} #javascript {
-
-} #latex {
-    width: 75px;
-
-} #htmlcss {
-
-}
+#c { width: 65px; margin-left: -7px; }
+#java { width: 45px; }
+#python {}
+#javascript {}
+#latex { width: 75px; }
+#htmlcss {}
 
 //~~~~~~~~~~~~~~~~ Contact Page Icons ~~~~~~~~~~~~~~~~~~~
 
@@ -70,8 +60,41 @@
 }
 
 @media (max-width: 1250px) {
-    .linkIcons { font-size: 60px; }
+    .icon { font-size: 60px }
+    #down { font-size: 50px; }
+    #c { width: 60px; margin-left: -7px; }
+    #java { width: 45px; }
+    #python { width: 50px; }
+    #javascript { width: 50px; }
+    #latex { width: 65px; }
+    #htmlcss { width: 50px; }
 }
 @media (max-width: 850px) {
-    .linkIcons { font-size: 55px; }
+    .icon { font-size: 50px; }
+    #down { font-size: 40px; }
+    #c { width: 50px; margin-left: -7px; }
+    #java { width: 35px; }
+    #python { width: 40px; }
+    #javascript { width: 40px; }
+    #latex { width: 65px; }
+    #htmlcss { width: 40px; }
+}
+@media (max-width: 730px) {
+    .icon { font-size: 35px; }
+    #down { font-size: 30px; }
+    #c { width: 47px; margin-left: -7px; }
+    #java { width: 32px; }
+    #python { width: 37px; }
+    #javascript { width: 37px; }
+    #latex { width: 60px; }
+    #htmlcss { width: 37px; }
+}
+
+@media (max-width: 500px) {
+    #c { width: 44px; margin-left: -7px; }
+    #java { width: 29px; }
+    #python { width: 34px; }
+    #javascript { width: 34px; }
+    #latex { width: 50px; }
+    #htmlcss { width: 34px; }
 }

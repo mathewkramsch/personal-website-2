@@ -47,4 +47,10 @@
         width: 70%;
     }
     .rightContainer { width: 80%; }
+    .progLangObjects { padding-left: 0; }
+}
+
+@media (max-width: 850px) {
+    .rightContainer { margin-bottom: 0; }
+    .page { margin-bottom: 0; }
 }

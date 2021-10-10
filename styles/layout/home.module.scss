@@ -97,17 +97,16 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 730px) {
     .subHeaderLeft {
-        min-width: 200px !important;
-        max-width: 300px !important;
+        min-width: 0px !important;
+        max-width: 730px !important;
     }
 }
 
+@media (max-width: 600px) {
+    .subHeaderLeft {}
+}
+
 @media (max-width: 500px) {
-    .links {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 }

@@ -39,6 +39,10 @@ export default function Lang(props) {
                 <div className='skillLevelOutline'>
                     { getSkillLevelBar(props.langData.skillLevel) }
                 </div>
+                <div className='proficiencyIndicatorAlt'>
+                    <p id='proficiency'>{ props.langData.skillLevel }/5 Proficiency</p>
+                </div>
+
             </div>
             { props.cardView==props.langData.language &&
                 <ExtendedLangCard langData={props.langData}/> }

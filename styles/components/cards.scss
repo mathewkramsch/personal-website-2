@@ -9,6 +9,7 @@
 @mixin card($card-bg-color) {
     display: flex;
     flex-direction: row;
+    align-items: center;
     border-radius: 19px;
     box-shadow: 0px 0px 5px 5px $card-bg-color;
     background-color: $card-bg-color;
@@ -60,9 +61,7 @@
 .cardInfo {
     display: inline-block;
     width: auto;
-    margin-top: 40px;
-    margin-right: 20px;
-    margin-left: 15px;
+    margin: 40px 20px 20px 15px;
     a {  /* project title link */
         display: inline-block;
         h4 { margin-bottom: 10px; }
@@ -110,7 +109,7 @@
 .collapsedLangCard {
     display: inline-flex;
     align-items: center;
-    height: 7vh;
+    height: 85px;
 }
 
 
@@ -140,7 +139,7 @@
     width: 30vw;
     border-radius: 16px;
     background-color: colors.$bg-card-progLang-skill-bg;
-    height: 3.5vh;
+    height: 37px;
     margin-right: 3.3vw;
 }
 
@@ -153,6 +152,7 @@
 .extendedLangCard {
     margin: 0 1.5vw 1.5vw 1.5vw;
     overflow-y: hidden;
+    width: 95%;
 }
 
 .proficiencyIndicator {
@@ -160,12 +160,25 @@
     margin: 0 2vw 1.5vw 0;
 }
 
-.langDescription {}
+.proficiencyIndicatorAlt {
+    text-align: right;
+    margin-right: 2vw;
+    display: none;
+}
 
+.langDescription {
+    align-self: flex-start;
+}
+
+@media (max-width: 1650px) {
+    .langText { margin-left: 6vw; }
+}
 @media (max-width: 1600px) {
+    .progLangCard {
+    }
     .collapsedLangCard {
-        height: 9vh;
         justify-content: space-between;
+        width: 100%;
     }
     .language {
         margin-left: 2vw;
@@ -180,8 +193,38 @@
         margin-right: 0px;
     }
 }
+@media (max-width: 1250px) {
+    .collapsedLangCard { height: 75px; }
+    .skillLevelOutline { height: 34px; }
+    .cardImage {
+        a { img {
+            width: 200px;
+            height: 130px;
+        }}
+    }
+    .cardInfo { margin: 20px !important; }
+    .langText { margin-left: 8vw; }
 
-@media (max-width: 768px) {
-    .projectCard { flex-direction: column; }
-    .projectCard-focus { flex-direction: column; }
+}
+@media (max-width: 970px) {
+    .cardImage { display: none; }
+    .langText { margin-left: 10vw; }
+}
+@media (max-width: 850px) {
+    .collapsedLangCard { height: 65px; }
+    .skillLevelOutline { height: 27px; }
+}
+@media (max-width: 730px) {
+    .skillLevelOutline { display: none; }
+    .proficiencyIndicator { display: none; }
+    .proficiencyIndicatorAlt { display: unset !important; }
+    .collapsedLangCard { height: 55px; }
+    .langText { margin-left: 12vw; }
+    .extendedLangCard { margin-top: 15px; }
+}
+@media (max-width: 430px) { .langText { margin-left: 13vw; }}
+@media (max-width: 380px) { .langText { margin-left: 55px; }}
+@media (max-width: 350px) {
+    .proficiencyIndicatorAlt { display: none !important; }
+    .langText { margin-left: 60px; }
 }
