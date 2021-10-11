@@ -97,9 +97,14 @@
     }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 1440px) {
     .page { height: auto; }
     .pageContent { height: auto; padding: 8vh 0; }
+    .bottomContainer { margin-top: -6vh; }
+}
+@media (max-width: 1250px) { .bottomContainer { margin-top: -10vh; }}
+
+@media (max-width: 730px) {
     .subHeaderLeft {
         min-width: 0px !important;
         max-width: 730px !important;
