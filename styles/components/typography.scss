@@ -1,6 +1,7 @@
 // typography.scss
 
 @use './colors';
+@use './mixins';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 // Font Variables
@@ -10,7 +11,6 @@ $work-sans: 'Work Sans', sans-serif;
 
 $title-font: $inter;
 $body-font: $work-sans;
-
 
 h1 {  // title: "Mathew Kramsch"
     font-family: $title-font;
@@ -44,9 +44,9 @@ h3 {  // subtitle: "Full-Stack Software Developer"
     font-weight: 700;
     font-size: 60px;
     color: colors.$fg-page-title;
-    user-select: none;
     cursor: pointer;
     transition: all 0.2s;
+    @include mixins.noSelect;
     &:hover {
         opacity: 75%;
     }
@@ -61,7 +61,7 @@ h4 {  // links, view projects, back to top, aboutInfo, projectTItle
     color: colors.$fg-text-link;
     display: inline-flex;
     align-items: center;
-    user-select: none;
+    @include mixins.noSelect;
 } #projectTitle {
     &:hover { font-weight: 600; }
 }

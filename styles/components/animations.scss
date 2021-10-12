@@ -37,7 +37,7 @@
     from { max-height: 0px; }
     to { max-height: 300px; }
 } @keyframes close {
-    from { padding-bottom: 10vh; }
+    from { padding-bottom: calc(10%); }
     to { padding-bottom: 0; }
 }
 

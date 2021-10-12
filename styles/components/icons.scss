@@ -5,6 +5,7 @@
 .icon {
     font-size: 66px;
     color: colors.$fg-icon-normal;
+    user-select: none;
 }
 
 //~~~~~~~~~~~~~~~~~ Home Page Icons ~~~~~~~~~~~~~~~~~~~~
@@ -19,6 +20,7 @@
 
 //~~~~~~~~~ Programming Languages Page Icons ~~~~~~~~~~~~
 
+.langIcons { user-select: none; }
 #c { width: 65px; margin-left: -7px; }
 #java { width: 45px; }
 #python {}

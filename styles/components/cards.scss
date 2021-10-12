@@ -1,6 +1,7 @@
 // cards.scss - for all card objects
 
 @use './colors';
+@use './mixins';
 
 @mixin focus($card-bg-color) {
     box-shadow: 0px 0px 0px 7px $card-bg-color;
@@ -92,6 +93,7 @@
     border-radius: 16px;
     flex-direction: column;
     &:hover { cursor: pointer; }
+    @include mixins.noSelect;
 }
 
 .progLangCard {
@@ -111,7 +113,6 @@
     align-items: center;
     height: 85px;
 }
-
 
 .language {
     min-width: 14vw;
