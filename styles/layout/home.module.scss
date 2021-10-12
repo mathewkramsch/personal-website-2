@@ -111,9 +111,8 @@
     }
 }
 
-@media (max-width: 600px) {
-    .subHeaderLeft {}
-}
-
-@media (max-width: 500px) {
+@media (max-width: 540px) {
+    #subHeaderTitle {
+        height: 2em;
+    }
 }

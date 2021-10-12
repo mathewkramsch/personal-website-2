@@ -45,7 +45,11 @@ export default function Home() {
 	const displayTitle = (titleNum)=>{
 		const numberOfTitles = titles.length;
 		const title = titles[titleNum%numberOfTitles];
-		return <h3 onClick={toggleTitle} className={newMount && 'onMountStyle'}>{title}</h3>;
+		return (
+			<h3 onClick={toggleTitle} className={newMount && 'onMountStyle'} id={s.subHeaderTitle}>
+				{title}
+			</h3>
+		);
 	}
 	const displayAboutInfo = (aboutInfoNum)=>{
 		const numberOfAboutInfos = aboutInfoList.length;

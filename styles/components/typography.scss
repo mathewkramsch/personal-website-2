@@ -208,6 +208,10 @@ a {  // links, Project Title link, view source code link
     p,a,.inputText { font-size: 13px; }
 }
 
-@media (max-width: 350px) {
-    h1 { font-size: 65px; }
+@media (max-width: 350px) { h1 { font-size: 65px; }}
+@media (max-width: 330px) { h3 { font-size: 25px; }}
+
+@media (pointer: coarse) {
+    h3:hover { opacity: 100%; }
+    .aboutInfo:hover { opacity: 100%; }
 }
