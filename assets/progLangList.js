@@ -2,9 +2,9 @@
 
 export const progLangList = [
     {
-        language: 'C++',
+        language: 'C, C++',
         skillLevel: '5',  // out of 5
-        langDescription: 'Advanced experience with C++ including algorithm optimization, data structures, socket programming in C, client/surver communication, object oriented programming, and industry best practices.',
+        langDescription: 'Advanced experience with C++ including algorithm optimization, data structures, socket programming in C, kernel programming in C, client/surver communication, object oriented programming, and industry best practices.',
         iconSrc: '/langIcons/c++.svg'
     },
     {
