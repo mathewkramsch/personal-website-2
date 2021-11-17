@@ -46,7 +46,7 @@ export default function Home() {
 		const numberOfTitles = titles.length;
 		const title = titles[titleNum%numberOfTitles];
 		return (
-			<h3 onClick={toggleTitle} className={newMount && 'onMountStyle'} id={s.subHeaderTitle}>
+			<h3 onClick={toggleTitle} className={newMount? 'onMountStyle':''} id={s.subHeaderTitle}>
 				{title}
 			</h3>
 		);

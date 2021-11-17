@@ -2,15 +2,21 @@
 
 export const progLangList = [
     {
-        language: 'C, C++',
+        language: 'C',
         skillLevel: '5',  // out of 5
-        langDescription: 'Advanced experience with C++ including algorithm optimization, data structures, socket programming in C, kernel programming in C, client/surver communication, object oriented programming, and industry best practices.',
+        langDescription: 'Extensive experience writing clean and highly optimized C code. Applications include socket programming, client/surver communication, kernel programming, advanced memory management.',
+        iconSrc: '/langIcons/c.svg'
+    },
+    {
+        language: 'C++',
+        skillLevel: '5',
+        langDescription: 'Advanced knowledge including algorithm optimization, data structures, object oriented programming, and industry best practices. Basic graphic programming in C++ using Eigen3 and OpenCV.',
         iconSrc: '/langIcons/c++.svg'
     },
     {
         language: 'Java',
         skillLevel: '2',
-        langDescription: 'Intermediate knowledge of syntax and data structures.',
+        langDescription: 'Intermediate knowledge of syntax and data structures, basic web development using Spring Boot',
         iconSrc: '/langIcons/java.svg'
     },
     {
