@@ -4,7 +4,7 @@ export const progLangList = [
     {
         language: 'C',
         skillLevel: '5',  // out of 5
-        langDescription: 'Extensive experience writing clean and highly optimized C code. Applications include socket programming, client/surver communication, kernel programming, advanced memory management, and asychronous systems development.',
+        langDescription: 'Extensive experience writing clean and highly optimized C code. Applications include socket programming, client/surver communication, kernel programming, advanced memory management, and asynchronous systems development.',
         iconSrc: '/langIcons/c.svg'
     },
     {
