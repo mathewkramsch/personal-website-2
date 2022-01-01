@@ -10,21 +10,21 @@ export const projectsList = [  // array of project objects
     },
     {
         title: 'JavaScript Etch-a-Sketch',
-        description: 'A browser version of an Etch-a-Sketch built with JavaScript. This aplication was one of the projects assigned in The Odin Project coursework. ',
+        description: 'A browser version of an Etch-a-Sketch built with JavaScript. This application was one of the projects assigned in The Odin Project coursework. ',
         imgSrc: '/projectImgs/etch-a-sketch.png',
         link: 'https://mathewkramsch.github.io/odin-etch-a-sketch/',
         srcCodeLink: 'https://github.com/mathewkramsch/odin-etch-a-sketch'
     },
     {
         title: 'JavaScript Drum-Kit',
-        description: 'An in-browser keyboard Drum-Kit built with JavaScript. This aplication was one of the projects assigned in The Odin Project coursework. ',
+        description: 'An in-browser keyboard Drum-Kit built with JavaScript. This application was one of the projects assigned in The Odin Project coursework. ',
         imgSrc: 'projectImgs/drum-kit.png',
         link: 'https://mathewkramsch.github.io/javascript30-drumkit/',
         srcCodeLink: 'https://github.com/mathewkramsch/javascript30-drumkit'
     },
     {
         title: 'Rock Paper Scissors Game',
-        description: 'An in-browser Rock, Paper, Scissors game with UI built with JavaScript. This aplication was one of the projects assigned in The Odin Project coursework. ',
+        description: 'An in-browser Rock, Paper, Scissors game with UI built with JavaScript. This application was one of the projects assigned in The Odin Project coursework. ',
         imgSrc: 'projectImgs/rockpaperscissors.png',
         link: 'https://mathewkramsch.github.io/odin-rockpaperscissors/',
         srcCodeLink: 'https://github.com/mathewkramsch/odin-rockpaperscissors'
