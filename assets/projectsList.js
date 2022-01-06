@@ -3,7 +3,7 @@
 export const projectsList = [  // array of project objects
     {  // project object
         title: 'IV Housing Web Application',
-        description: 'Worked in a team of 5 to make a housing search application specific to Isla (still in development). ',
+        description: 'Worked in a team of 5 to make a housing search application specific to Isla Vista (still in development). ',
         imgSrc: '/projectImgs/ivhousing.png',
         link: 'https://cs48-s20-s0-t3-prod.herokuapp.com/',
         srcCodeLink: 'https://github.com/ucsb-cs48-s20/project-s0-t3-iv-housing'
