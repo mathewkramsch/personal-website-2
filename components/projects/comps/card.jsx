@@ -63,9 +63,11 @@ export default class Card extends React.Component {
                         </h4>
                     </a>
                     <p>{this.props.projectData.description}
-                        <a href={this.props.projectData.srcCodeLink} className='srcCodeLink'>
-                            View source code.
-                        </a>
+						{ this.props.projectData.srcCode==='true' &&
+							<a href={this.props.projectData.srcCodeLink} className='srcCodeLink'>
+								View source code.
+							</a>
+						}
                     </p>
                 </div>
             </div>
