@@ -5,7 +5,7 @@ export const projectsList = [  // array of project objects
         title: 'TuffHouse Store/Blog Website',
         description: 'Worked as sole front-end developer for local start-up to design and build a responsive and scalable online store/blog from scratch using React and SASS. ',
         imgSrc: '/projectImgs/tuffhouse.png',
-        link: 'https://mathewkramsch.github.io/odin-etch-a-sketch/',
+		link: 'https://tuffhouse.us/',
         srcCode: 'false',
         srcCodeLink: 'https://github.com/mathewkramsch/odin-etch-a-sketch'
     },
