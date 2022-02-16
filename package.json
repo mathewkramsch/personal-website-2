@@ -4,6 +4,7 @@
 	"description": "Personal Portfolio Website",
 	"main": "index.js",
 	"scripts": {
+		"debug": "NODE_OPTIONS='--openssl-legacy-provider' next dev",
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",

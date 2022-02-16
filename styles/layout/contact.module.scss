@@ -9,10 +9,6 @@
     justify-content: center;
     background-color: colors.$bg-contact-page-1;
     width: 100%;
-    background-image:
-        linear-gradient(colors.$bg-contact-page-1, rgba(30,30,30,0.85)),
-        url('/business2.svg');
-    background-size: cover;
     box-shadow:
         0 0 0 10vh colors.$bg-contact-page-2,
         0 0 0 15vh colors.$bg-contact-page-3;
