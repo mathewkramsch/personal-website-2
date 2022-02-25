@@ -11,10 +11,10 @@ export default function App({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>{siteTitle}</title>
-				<meta charset="utf-8" />
-				<meta name="viewport" content="width=device-width, initial-scale=1">
-				<meta name="description" content="I'm a diligent fifth year Computer Science student at UC Santa Barbara who is currently looking for software development engineering opportunities.">
-				<meta name="keywords" content="Mathew, Kramsch, Mathew Kramsch, mathewkramsch, mathew webdev, webdev">
+				<meta charset="utf-8"/>
+				<meta name="viewport" content="width=device-width, initial-scale=1"/>
+				<meta name="description" content="I'm a diligent fifth year Computer Science student at UC Santa Barbara who is currently looking for software development engineering opportunities."/>
+				<meta name="keywords" content="Mathew, Kramsch, Mathew Kramsch, mathewkramsch, mathew webdev, webdev"/>
 				<link rel="shortcut icon" href="/favicon/favicon.ico" />
 				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
 				<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"/>
@@ -26,7 +26,3 @@ export default function App({ Component, pageProps }) {
 		</>
 	);
 }
-
-				// <link rel="preconnect" href="https://fonts.googleapis.com"/>
-				// <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='anonymous'/>
-				// <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,600&display=swap" rel="stylesheet"/>
