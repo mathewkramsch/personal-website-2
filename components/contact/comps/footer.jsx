@@ -38,7 +38,7 @@ export default class Footer extends React.Component {
                 </div>
                 <div className={s.bottomFooter}>
                     <h4 className='footerText'>
-                        <div id='copyRight'>&copy;</div>2021 Mathew Kramsch
+                        <div id='copyRight'>&copy;</div>2022 Mathew Kramsch
                     </h4>
                     <a href='https://github.com/mathewkramsch/personal-website-2' className='websiteSrcCode'>
                         <FontAwesomeIcon icon={faGithub} className='icon' id='githubContact'/>
