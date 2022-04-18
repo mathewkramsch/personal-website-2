@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>{siteTitle}</title>
-				<meta charset="utf-8"/>
+				<meta charSet="utf-8"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1"/>
 				<meta name="description" content="I'm a diligent fifth year Computer Science student at UC Santa Barbara who is currently looking for software development engineering opportunities."/>
 				<meta name="keywords" content="Mathew, Kramsch, Mathew Kramsch, mathewkramsch, mathew webdev, webdev"/>
