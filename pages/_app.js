@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
 				<meta name="viewport" content="width=device-width, initial-scale=1"/>
 				<meta name='description' content={description}/>
 				<meta name='keywords' content={keywords}/>
-				<meta name='author' content={author}>
+				<meta name='author' content={author}/>
 				<meta name='twitter:card' content='summary'/>
 				<meta name='twitter:title' content={siteTitle}/>
 				<meta name='twitter:description' content={description}/>

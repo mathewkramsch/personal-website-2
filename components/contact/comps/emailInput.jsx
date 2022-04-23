@@ -73,7 +73,7 @@ export default function EmailInput() {
                     </div>
                     <div className={s.inputBox}>
                         { requiredFieldError(emailRequiredX) }
-                        <input type="text" id="email" name="from_email" className='inputText'
+                        <input type="email" id="email" name="from_email" className='inputText'
                             placeholder='Email Address'/>
                     </div>
                     <div className={s.inputBox}>
