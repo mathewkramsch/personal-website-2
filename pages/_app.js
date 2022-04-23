@@ -4,10 +4,11 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import './globals.scss'
 import Head from 'next/head'
 
-const siteTitle = 'Mathew Kramsch';
+const siteTitle = 'Mathew Kramsch'
+const author = siteTitle
 const description = 'Software developer and diligent fifth year computer science student at UC Santa Barbara, graduating in June 2022';
 const keywords = 'Mathew, Kramsch, Mathew Kramsch, mathewkramsch, mathew webdev, webdev'
-const image_path = '/site_screenshot.png'
+const image_path = 'https://mathewkramsch.com/site_screenshot.png'
 const image_alt = 'Site Page'
 
 export default function App({ Component, pageProps }) {
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }) {
 				<meta name="viewport" content="width=device-width, initial-scale=1"/>
 				<meta name='description' content={description}/>
 				<meta name='keywords' content={keywords}/>
+				<meta name='author' content={author}>
 				<meta name='twitter:card' content='summary'/>
 				<meta name='twitter:title' content={siteTitle}/>
 				<meta name='twitter:description' content={description}/>
