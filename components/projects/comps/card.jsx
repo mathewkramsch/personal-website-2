@@ -50,7 +50,7 @@ export default class Card extends React.Component {
                 ref={this.cardRef}>
                 <div className={this.state.focus ? 'cardImage cardImage-focus' : 'cardImage' }
                     onMouseEnter={this.toggleHoverImg} onMouseLeave={this.toggleHoverImg}>
-                    { this.state.imgHover && <p id='openProject'>Open Project</p> }
+                    { this.state.imgHover && <a href={this.props.projectData.link} id='openProject'>Open Project</a> }
                     <a href={this.props.projectData.link}>
                         <img src={this.props.projectData.imgSrc}/>
                     </a>

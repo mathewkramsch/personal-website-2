@@ -128,8 +128,11 @@ a {  // links, Project Title link, view source code link
 }
 
 #openProject {
+    font-family: $body-font;
     font-size: 25px;
     font-weight: 500;
+    margin: 0;
+    color: colors.$fg-text-description;
 }
 
 #copyRight {
