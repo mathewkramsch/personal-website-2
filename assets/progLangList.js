@@ -11,7 +11,7 @@ export const progLangList = [
         language: 'C++',
         skillLevel: '5',
         langDescription: 'Advanced knowledge including algorithm optimization, data structures, object oriented programming, and industry best practices. Basic graphic programming in C++ using Eigen3 and OpenCV.',
-        iconSrc: '/langIcons/c++.svg'
+        iconSrc: '/langIcons/cpp.svg'
     },
     {
         language: 'Java',
