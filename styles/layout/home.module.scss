@@ -47,21 +47,21 @@
 
 .subHeaderRight {
     z-index: 1;
-    align-self: flex-end;
-    text-align: right;
+    align-self: flex-start;
+    text-align: left;
     width: 45%;
-    #intro { margin-bottom: 25px; }
+    #intro { 
+		margin-bottom: 25px; 
+	}
     min-height: 230px;
+	margin-bottom: 120px;
 }
 
 .bottomContainer {
     margin-top: -10vh;
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
-    img { width: 30vw; }
-    .scrollDownButton {}
-    .dummy { width: 30vw; }
 }
 
 .page::before {

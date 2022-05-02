@@ -9,7 +9,7 @@ export default function Projects(props) {
 		<div className={s.page}>
 			<div className={s.pageContent}>
 	            <div className={s.leftContainer}>
-	                <h2>My personal projects</h2>
+	                <h2>My projects and work</h2>
 	            </div>
 				<div className={s.rightContainer}>
 					<ProjectCards data={props.data}/>

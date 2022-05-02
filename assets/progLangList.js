@@ -32,12 +32,6 @@ export const progLangList = [
         iconSrc: '/langIcons/javascript.svg'
     },
     {
-        language: 'LaTeX',
-        skillLevel: '4',
-        langDescription: "Experience with LaTeX for formatting for professional, mathematical, and scientific documents. See resume for example.",
-        iconSrc: '/langIcons/latex.svg'
-    },
-    {
         language: 'HTML/CSS',
         skillLevel: '5',
         langDescription: 'Responsive web design with mobile optimization and search engine optimization. Building clean and intuitive UI/UX design with complex layouts for website landing pages, blogs, web applications, browser-based games. Using SASS and various JavaScript frameworks to structure codebase and Figma to design and prototype mobile and desktop wireframes for sites.',

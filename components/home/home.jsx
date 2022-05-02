@@ -91,9 +91,7 @@ export default function Home() {
 					</FadeIn>
 				</div>
 				<div className={s.bottomContainer}>
-					<img src='/illustrations/coding.svg' style={{userSelect:'none'}}/>
 					<div className={s.scrollDownButton}><ScrollDown/></div>
-					<div className={s.dummy}></div>
 				</div>
 			</div>
 		</div>
