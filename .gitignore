@@ -2,3 +2,4 @@ node_modules
 public/update_resume
 .node_repl_history
 .next
+.env*
